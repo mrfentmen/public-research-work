@@ -2,6 +2,7 @@
 title: "AI Will Make Coding Redundant for Humans"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-21
+zenodo_version: "1"
 doi: "10.5281/zenodo.24408554"
 zenodo: "https://doi.org/10.5281/zenodo.24408554"
 license: "cc-by-4.0"

@@ -2,6 +2,7 @@
 title: "Dada? How two syllables made ChatGPT a father, with no instructions at all, and what the ads did during bedtime"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-22
+zenodo_version: "1"
 doi: "10.5281/zenodo.24440077"
 zenodo: "https://doi.org/10.5281/zenodo.24440077"
 license: "cc-by-4.0"

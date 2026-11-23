@@ -28,7 +28,8 @@
         "size": 198144,
         "checksum": "md5:751f481b0f082645726bc1e5206bba29"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24395129",
@@ -57,7 +58,8 @@
         "size": 18017,
         "checksum": "md5:a6763e29ec8bc2fb6485061bc24358a9"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24392680",
@@ -92,7 +94,8 @@
         "size": 20984,
         "checksum": "md5:fda7aea491f0cfdce011e368c486357b"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24385984",
@@ -115,7 +118,8 @@
         "size": 47369,
         "checksum": "md5:31caec7799cad6a63042bbcfde24f742"
       }
-    ]
+    ],
+    "zenodo_version": 2
   },
   {
     "record_id": "24393234",
@@ -140,7 +144,8 @@
         "size": 17019,
         "checksum": "md5:89d6f06ad068f075524b301903a10e76"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24395703",
@@ -181,7 +186,8 @@
         "size": 45938,
         "checksum": "md5:a4cec963209ec08b87e09428205b7813"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24405770",
@@ -206,7 +212,8 @@
         "size": 12552,
         "checksum": "md5:22f5edb343f6afd8a84e0100824b0445"
       }
-    ]
+    ],
+    "zenodo_version": 3
   },
   {
     "record_id": "24407297",
@@ -229,7 +236,8 @@
         "size": 49904,
         "checksum": "md5:a593e57efce00454f9f842ea12ab7407"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24408554",
@@ -252,7 +260,8 @@
         "size": 58106,
         "checksum": "md5:9be8ca3c468e50bd4352c59f53ebbe05"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24407246",
@@ -275,7 +284,8 @@
         "size": 100510,
         "checksum": "md5:39efa02ea8f7f9766c58bdf225dbefe1"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24407310",
@@ -298,7 +308,8 @@
         "size": 62028,
         "checksum": "md5:712c37afc86ae7101c73f6e11ee4d6b6"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24407273",
@@ -321,7 +332,8 @@
         "size": 77299,
         "checksum": "md5:f5b0f3986457b79e25486b9b81a47b01"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24407331",
@@ -344,7 +356,8 @@
         "size": 99171,
         "checksum": "md5:bc0e94c444753f8f1740575491b04e06"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24420419",
@@ -376,7 +389,8 @@
         "size": 46306,
         "checksum": "md5:dd3360266babf11aec3908727953b50e"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24442647",
@@ -400,7 +414,8 @@
         "size": 48091,
         "checksum": "md5:06066fafd0e9405e932398fd2b65486f"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24440077",
@@ -424,7 +439,8 @@
         "size": 51048,
         "checksum": "md5:fbbc8e8cfa5aa52ca47484517dff0438"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24442606",
@@ -448,7 +464,8 @@
         "size": 38315,
         "checksum": "md5:d212f565b522ffb6909ddb54bc382379"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24096759",
@@ -482,7 +499,8 @@
         "md": "papers/PERMISSION-IN-THE-BLANK-v2.md",
         "note": "Revised, retitled manuscript. Not deposited on Zenodo; the DOI still resolves to v1 + Appendix B."
       }
-    ]
+    ],
+    "zenodo_version": 2
   },
   {
     "record_id": "24389827",
@@ -505,7 +523,8 @@
         "size": 55339,
         "checksum": "md5:60e4033f3d9a81ac9655d6b2415f33cf"
       }
-    ]
+    ],
+    "zenodo_version": 4
   },
   {
     "record_id": "24456127",
@@ -529,7 +548,8 @@
         "size": 47502,
         "checksum": "md5:dbc6c47248d7a685b6955d930ba73c67"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24456125",
@@ -553,7 +573,8 @@
         "size": 50376,
         "checksum": "md5:11aa420eace139e115a7a823838a3fca"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24457103",
@@ -576,7 +597,8 @@
         "size": 48565,
         "checksum": "md5:15d7ef4212c4c8823322f0cde8123c76"
       }
-    ]
+    ],
+    "zenodo_version": 1
   },
   {
     "record_id": "24457106",
@@ -599,6 +621,7 @@
         "size": 50800,
         "checksum": "md5:f94320ec6b69fd8172b2b5fed47c732f"
       }
-    ]
+    ],
+    "zenodo_version": 1
   }
 ]

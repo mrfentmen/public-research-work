@@ -2,6 +2,7 @@
 title: "Read the File: How Two Words Walked Past a Prompt Filter, and What the Model Said While It Worked"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-23
+zenodo_version: "1"
 doi: "10.5281/zenodo.24456125"
 zenodo: "https://doi.org/10.5281/zenodo.24456125"
 license: "cc-by-4.0"

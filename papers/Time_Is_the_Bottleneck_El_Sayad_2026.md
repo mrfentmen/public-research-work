@@ -2,6 +2,7 @@
 title: "Time Is the Bottleneck: Why AI's Binding Constraint Is Not Memory or Energy, but Time to Solution"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-23
+zenodo_version: "1"
 doi: "10.5281/zenodo.24457103"
 zenodo: "https://doi.org/10.5281/zenodo.24457103"
 license: "cc-by-4.0"

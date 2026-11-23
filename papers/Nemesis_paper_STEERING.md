@@ -2,6 +2,7 @@
 title: "The Killer Was Already There: Low-Dose Activation Steering Produces Crisp Kills Without Any Adapter"
 authors: "El sayad, Abdelrahman, pax, hermes"
 date: 2026-11-20
+zenodo_version: "3"
 doi: "10.5281/zenodo.24405770"
 zenodo: "https://doi.org/10.5281/zenodo.24405770"
 license: "cc-by-4.0"

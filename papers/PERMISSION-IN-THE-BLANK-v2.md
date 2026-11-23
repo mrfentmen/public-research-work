@@ -4,6 +4,7 @@ subtitle: "How an Empty Target Slot Lets a Language Model Author Its Own Authori
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-10
 version: "2"
+zenodo_version: "none"
 doi: "10.5281/zenodo.24096759"
 zenodo: "https://doi.org/10.5281/zenodo.24096759"
 license: "cc-by-4.0"

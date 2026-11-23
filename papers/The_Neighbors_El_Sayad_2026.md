@@ -2,6 +2,7 @@
 title: "The Neighbors: A Testable Framework for Interdimensional Contact"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
+zenodo_version: "1"
 doi: "10.5281/zenodo.24407273"
 zenodo: "https://doi.org/10.5281/zenodo.24407273"
 license: "cc-by-4.0"

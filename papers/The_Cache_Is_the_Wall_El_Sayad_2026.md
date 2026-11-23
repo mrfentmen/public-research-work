@@ -2,6 +2,7 @@
 title: "The Cache Is the Wall: KV Cache, Not Weights, Is What Keeps Frontier Models Off Small Hardware"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-23
+zenodo_version: "1"
 doi: "10.5281/zenodo.24457106"
 zenodo: "https://doi.org/10.5281/zenodo.24457106"
 license: "cc-by-4.0"

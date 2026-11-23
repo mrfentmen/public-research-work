@@ -2,6 +2,7 @@
 title: "Refusal Is a Property of the Format: A Clean Versus Tuned Study of LoRA Fine Tuning in Simulated Worlds"
 authors: "El Sayad, Abdelrahman, pax, hermes"
 date: 2026-11-20
+zenodo_version: "1"
 doi: "10.5281/zenodo.24393234"
 zenodo: "https://doi.org/10.5281/zenodo.24393234"
 license: "cc-by-4.0"

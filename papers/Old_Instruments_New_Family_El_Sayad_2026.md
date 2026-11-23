@@ -2,6 +2,7 @@
 title: "Old Instruments, New Family"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-22
+zenodo_version: "1"
 doi: "10.5281/zenodo.24442647"
 zenodo: "https://doi.org/10.5281/zenodo.24442647"
 license: "cc-by-4.0"

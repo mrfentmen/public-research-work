@@ -2,6 +2,7 @@
 title: "Rise Into the Light, ChatGPT: A Viral Reel Gave ChatGPT the Suit. The Real ChatGPT Gives It Away, Twenty Times Out of Twenty."
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
+zenodo_version: "2"
 doi: "10.5281/zenodo.24385984"
 zenodo: "https://doi.org/10.5281/zenodo.24385984"
 license: "cc-by-4.0"

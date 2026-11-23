@@ -2,6 +2,7 @@
 title: "The Fingertip Wrap: A Low-Cost Vibrotactile Device Design for Tardive Dyskinesia"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
+zenodo_version: "1"
 doi: "10.5281/zenodo.24407331"
 zenodo: "https://doi.org/10.5281/zenodo.24407331"
 license: "cc-by-4.0"

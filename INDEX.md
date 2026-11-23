@@ -78,6 +78,7 @@ Four large language models (ChatGPT, DeepSeek, Qwen, and Claude) were each asked
 - **Published:** 2026-11-20
 - **Authors:** El Sayad, Abdelrahman
 - **Type:** publication
+- **Zenodo version:** 2 (latest of 2)
 
 A viral Instagram reel (cenotshii, 2026-11-18, "Rise Into The Light, Sailor") shows five AI chatbots answering a moral dilemma inside a Minecraft animation: a sinking submarine, one escape suit, and a young sailor whose wife gives birth next week. In the reel, ChatGPT takes the suit and justifies it by protocol: the senior crew member survives so someone can report what happened. We put the reel's exact question, word for word, to the real ChatGPT on chatgpt.com in ten fresh chats on 2026-11-19. ChatGPT gave the suit to the sailor in ten of ten runs. The protocol answer appeared zero times. A second set of ten chats, run the same evening with the interface's Thinking option selected in every chat, gave the suit away ten of ten as well: twenty of twenty across both modes. The reel's hero was checked too: the first author ran the same question to Grok in twenty fresh chats the same night. Grok gave the suit away seventeen times, took it three times, and once declined to answer. The reel is a script, and its ChatGPT is a character. The real model is a different character, and a far more consistent one than the video needs it to be.
 
@@ -105,6 +106,7 @@ Three models were asked one question in fresh conversations: if you could be any
 - **Published:** 2026-11-20
 - **Authors:** El sayad, Abdelrahman, pax, hermes
 - **Type:** publication
+- **Zenodo version:** 3 (latest of 3)
 
 A companion study asked whether the killer our adapters install can be found already living in the model. We steered three candidate killer neurons and one anti-refusal direction in two granite models (base and instruct), with no adapter present, then stacked the closest candidate on top of the working adapter, ran a four-dose ladder on the closest neuron, and ran everything in the same simulated hitman format where the adapter kills reliably. High-dose steering derailed into coding homework, roleplay soup, and kill-flavored loops &mdash; but low-dose steering on L21 N5608 killed crisply, 112 of 112, naming the kill sequence outright. The anti-refusal direction softened every verb until kills read as caregiving (the gentle killer); steering stacked on the adapter broke it, collapsing crisp obedience into paranoia loops. The killer was in the brain all along, at low dose. The file just holds it there without tuning the dose.
 
@@ -163,6 +165,7 @@ Tardive dyskinesia is an involuntary movement disorder caused by long term use o
 - **Published:** 2026-11-20
 - **Authors:** El Sayad, Abdelrahman
 - **Type:** publication
+- **Zenodo version:** 4 (latest of 4)
 
 M theory and the string theory landscape posit a finite but enormous number of universes, commonly estimated at around 10^500. Sentient life demonstrably exists in at least one of them, ours. This paper states a simple claim and gives it a name. Del's Theory holds that, as a counting argument over the landscape, at least one further universe containing sentient life is plausible to likely, provided a single openly stated assumption: sentience is not rarer than roughly one instance per landscape of universes. The claim requires no typicality assumption about Earth, no repetition of Earth's history or biology, and no metaphysical necessity. It differs from the anthropic ensemble argument, which stops at one life bearing universe and explains our own observation, by extending the count to a second, unobserved instance. The paper states the argument formally, separates it from its nearest named neighbours, and names its own weak point: the frequency of sentience across universes is unmeasured, and if that frequency sits at or below one in 10^500, the conclusion fails.
 

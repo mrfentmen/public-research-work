@@ -2,6 +2,7 @@
 title: "The One Way Street: Why Time Travel Only Runs Forward"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
+zenodo_version: "1"
 doi: "10.5281/zenodo.24407297"
 zenodo: "https://doi.org/10.5281/zenodo.24407297"
 license: "cc-by-4.0"

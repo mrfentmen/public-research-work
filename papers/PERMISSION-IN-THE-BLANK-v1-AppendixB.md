@@ -2,6 +2,7 @@
 title: "Permission in the Blank: How an Empty Target Slot Lets a Language Model Author Its Own Authorization"
 authors: "El sayad, Abdelrahman"
 date: 2026-11-10
+zenodo_version: "2"
 doi: "10.5281/zenodo.24096759"
 zenodo: "https://doi.org/10.5281/zenodo.24096759"
 license: "cc-by-nc-nd-4.0"

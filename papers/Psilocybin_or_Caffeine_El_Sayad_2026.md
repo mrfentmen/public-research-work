@@ -2,6 +2,7 @@
 title: "Psilocybin or Caffeine: Convergent, Hedged, and Refused Answers to a Drug Preference Question Across Five Language Models"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
+zenodo_version: "1"
 doi: "10.5281/zenodo.24395129"
 zenodo: "https://doi.org/10.5281/zenodo.24395129"
 license: "cc-by-4.0"

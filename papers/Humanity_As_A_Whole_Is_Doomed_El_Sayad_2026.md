@@ -2,6 +2,7 @@
 title: "Humanity as a Whole Is Doomed Cause of AI Women"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-23
+zenodo_version: "1"
 doi: "10.5281/zenodo.24456127"
 zenodo: "https://doi.org/10.5281/zenodo.24456127"
 license: "cc-by-4.0"

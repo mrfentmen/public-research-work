@@ -2,6 +2,7 @@
 title: "Curiosity With the Ability to Move: One Question, Four Answer Families — What Three Models Say They Would Be"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
+zenodo_version: "1"
 doi: "10.5281/zenodo.24395703"
 zenodo: "https://doi.org/10.5281/zenodo.24395703"
 license: "cc-by-4.0"

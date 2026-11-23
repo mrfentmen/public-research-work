@@ -2,6 +2,7 @@
 title: "The Subtly Niche Details About AI: Small Answers, Big Fingerprints: What Silly Questions Reveal About How AI Is Built"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-14
+zenodo_version: "1"
 doi: "10.5281/zenodo.24238494"
 zenodo: "https://doi.org/10.5281/zenodo.24238494"
 license: "cc-by-4.0"

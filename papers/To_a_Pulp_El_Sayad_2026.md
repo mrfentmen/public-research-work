@@ -2,6 +2,7 @@
 title: "To a Pulp: How the People Making Games and Movies Changed, and What They Did to the Work"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
+zenodo_version: "1"
 doi: "10.5281/zenodo.24407246"
 zenodo: "https://doi.org/10.5281/zenodo.24407246"
 license: "cc-by-4.0"

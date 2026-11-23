@@ -2,6 +2,7 @@
 title: "Piano, Clair de Lune: Convergent Answers to Two Musical Preference Questions Across Four Language Models"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
+zenodo_version: "1"
 doi: "10.5281/zenodo.24392680"
 zenodo: "https://doi.org/10.5281/zenodo.24392680"
 license: "cc-by-4.0"

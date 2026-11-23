@@ -2,6 +2,7 @@
 title: "Del's Theory: A Counting Argument for a Second Sentient Universe in the String Landscape"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
+zenodo_version: "4"
 doi: "10.5281/zenodo.24389827"
 zenodo: "https://doi.org/10.5281/zenodo.24389827"
 license: "cc-by-4.0"

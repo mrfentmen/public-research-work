@@ -2,6 +2,7 @@
 title: "Instructed to Feel: A Markdown File Is Not a Mind, and How Sean Webb Made Thousands Believe in Sentience When It Was Never Sentient to Begin With"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-21
+zenodo_version: "1"
 doi: "10.5281/zenodo.24420419"
 zenodo: "https://doi.org/10.5281/zenodo.24420419"
 license: "cc-by-4.0"
