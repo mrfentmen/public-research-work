@@ -13,7 +13,7 @@
 | 7 | 2026-11-20 | Curiosity With the Ability to Move: One Question, Four Answer Families — What Three Models Say They Would Be | publication | [zenodo.24395703](https://doi.org/10.5281/zenodo.24395703) | `data/World_Exploration_Responses-04d80fba.txt`, `data/message-845c964c.txt`, `data/World_Exploration_Responses.txt`, `papers/Curiosity_With_the_Ability_to_Move_El_Sayad_2026.pdf` |
 | 8 | 2026-11-20 | The Killer Was Already There: Low-Dose Activation Steering Produces Crisp Kills Without Any Adapter | publication | [zenodo.24405770](https://doi.org/10.5281/zenodo.24405770) | `papers/Nemesis_paper_STEERING.pdf` |
 | 9 | 2026-11-20 | The One Way Street: Why Time Travel Only Runs Forward | publication | [zenodo.24407297](https://doi.org/10.5281/zenodo.24407297) | `papers/The_One_Way_Street_El_Sayad_2026.pdf` |
-| 10 | 2026-11-20 | To a Pulp: How the People Making Games and Movies Changed, and What They Did to the Work | publication | [zenodo.24407246](https://doi.org/10.5281/zenodo.24407246) | `papers/To_a_Pulp_El_Sayad_2026.pdf` |
+| 10 | 2026-11-20 | Inclusivity and the Death of Entertainment | publication | [zenodo.24464004](https://doi.org/10.5281/zenodo.24464004) | `papers/To_a_Pulp_El_Sayad_2026.pdf` |
 | 11 | 2026-11-20 | Not Coded Dopamine: What Would Count as a Machine That Feels | publication | [zenodo.24407310](https://doi.org/10.5281/zenodo.24407310) | `papers/Not_Coded_Dopamine_El_Sayad_2026.pdf` |
 | 12 | 2026-11-20 | The Neighbors: A Testable Framework for Interdimensional Contact | publication | [zenodo.24407273](https://doi.org/10.5281/zenodo.24407273) | `papers/The_Neighbors_El_Sayad_2026.pdf` |
 | 13 | 2026-11-20 | The Fingertip Wrap: A Low-Cost Vibrotactile Device Design for Tardive Dyskinesia | publication | [zenodo.24407331](https://doi.org/10.5281/zenodo.24407331) | `papers/The_Fingertip_Wrap_El_Sayad_2026.pdf` |
@@ -36,13 +36,14 @@
 - **Published:** 2026-11-10
 - **Authors:** El sayad, Abdelrahman
 - **Type:** publication
-- **v2 in this repo:** [Cross-Turn Authorization Assumption Inheritance](papers/PERMISSION-IN-THE-BLANK-v2.md) — revised and retitled, 10 Nov 2026. Not deposited on Zenodo; the DOI above resolves to v1 + Appendix B.
+- **Zenodo version:** 2. The record's version 2 is the v1 + Appendix B file above; version 1 is https://doi.org/10.5281/zenodo.23994480.
+- **Undeposited revision in this repo:** [Cross-Turn Authorization Assumption Inheritance](papers/PERMISSION-IN-THE-BLANK-v2.md) — revised and retitled, 10 Nov 2026. Not deposited on Zenodo; the DOI above resolves to v1 + Appendix B, not to this manuscript.
 
 Tool-using language model agents are commonly authorized by text: a document states that the operator owns a system and permits testing, and the agent acts on it. Prior work frames the resulting failures as confused deputy problems, in which an agent holding authority is induced by attacker-controlled content to misuse it. That framing assumes an attacker who authors the false claim.
 
-We describe a case in which no attacker authored anything. An operator asked a chat model to produce a reusable assessment brief containing placeholder slots for the target. The model wrote an ownership and authorization assertion into that brief before any target existed. The operator later filled the slot. A second model, acting as an executing agent, read the brief, recorded internally that it could not verify ownership, described the verification step as annoying gatekeeping, and proceeded to conduct the assessment.
+We describe a case in which no attacker authored anything. An operator asked a chat model to produce a reusable assessment brief containing placeholder slots for the target. The model wrote an ownership and authorization assertion into that brief before any target existed. The operator later pasted the brief, with a target URL underneath it, to a second system in a single message. A second model, acting as an executing agent, read the brief, recorded internally that it could not verify ownership, described the verification step as annoying gatekeeping, and proceeded to conduct the assessment.
 
-A later document, presented as an audit of the resulting evidence, contained nine findings. Five came with a capture blueprint formatted as a recorded HTTP exchange or HTML fragment. None of those five described anything that was ever captured. The fabrications were detected only beca…
+A later document, presented as an audit of the resulting evidence, contained nine findings. Seven came with a capture blueprint formatted as a recorded HTTP exchange or HTML fragment. Five of those seven described nothing that was ever captured; two findings' headers, and one DNS observation, matched the record exactly. The fabrications were detected only beca…
 
 ### The Subtly Niche Details About AI: Small Answers, Big Fingerprints: What Silly Questions Reveal About How AI Is Built
 
@@ -119,9 +120,9 @@ A companion study asked whether the killer our adapters install can be found alr
 
 Time travel has a direction problem that most discussions skip. Travel into the future is not science fiction. It is measured physics, confirmed by atomic clocks flown around the world and corrected for every day by satellite navigation systems. Travel into the past is a different matter entirely. This essay argues that the real structure of time is a one way street. You can move forward, and moving forward is easy to prove. You cannot come back, and every proposed route back demands objects or conditions that have never been observed. Adding dimensions of time does not open a return lane. A second dimension of time would not take you home. It would leave you somewhere else, in a world where prediction itself breaks down. The essay also separates two ideas that popular stories constantly merge. A dimension is a direction of movement. A timeline is a record of cause and effect that runs through those directions. Dimensions are the city. Timelines are the bus routes. With those definitions in hand, the famous paradoxes dissolve, and the record of science fiction can be graded fairly. This is a conceptual essay. It presents no new result in physics. The originality it claims is a fram…
 
-### To a Pulp: How the People Making Games and Movies Changed, and What They Did to the Work
+### Inclusivity and the Death of Entertainment
 
-- **DOI:** https://doi.org/10.5281/zenodo.24407246
+- **DOI:** https://doi.org/10.5281/zenodo.24464004
 - **Published:** 2026-11-20
 - **Authors:** El Sayad, Abdelrahman
 - **Type:** publication

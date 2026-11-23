@@ -1,15 +1,15 @@
 ---
-title: "To a Pulp: How the People Making Games and Movies Changed, and What They Did to the Work"
+title: "Inclusivity and the Death of Entertainment"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
-zenodo_version: "3"
-doi: "10.5281/zenodo.24463545"
-zenodo: "https://doi.org/10.5281/zenodo.24463545"
+zenodo_version: "4"
+doi: "10.5281/zenodo.24464004"
+zenodo: "https://doi.org/10.5281/zenodo.24464004"
 license: "cc-by-4.0"
 pdf: "papers/To_a_Pulp_El_Sayad_2026.pdf"
 markdown: "papers/To_a_Pulp_El_Sayad_2026.md"
 ---
-# To a Pulp: How the People Making Games and Movies Changed, and What They Did to the Work
+# Inclusivity and the Death of Entertainment
 **Abdelrahman El Sayad**
 
 **Correction note (23 November 2026).** The conclusion's score list paired the critics' 99 with a player score of 8.3. That figure belongs to a different game in this paper's comparison lists (Grand Theft Auto IV). The pairing the paper's own table and Section 8 record is 3.7 against the 99, the widest gap in the table. The conclusion is corrected to it. The counter facts passage now also carries the contexts the score needs: the 99 rests on 152 advance critic reviews, and the 157 day one user ratings behind the 3.7 were gathered amid a download code boycott. The credits comparison's two bases (GTA IV's full listing against GTA VI's development only count) are labelled where the comparison is drawn.

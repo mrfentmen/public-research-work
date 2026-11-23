@@ -274,8 +274,8 @@
   },
   {
     "record_id": "24407246",
-    "doi": "10.5281/zenodo.24463545",
-    "title": "To a Pulp: How the People Making Games and Movies Changed, and What They Did to the Work",
+    "doi": "10.5281/zenodo.24464004",
+    "title": "Inclusivity and the Death of Entertainment",
     "publication_date": "2026-11-23",
     "resource_type": "publication",
     "creators": [
@@ -284,7 +284,7 @@
     "description": "<p>Twenty years ago the biggest games and films in the world were built by one kind of team, for one kind of audience, under one set of rules. Today they are built by different people, under different rules, and the work shows it. This paper argues a chain of six links. The hiring pipeline changed. The teams changed. The new makers build through their own eyes and put themselves, their identities, and their politics into franchises they inherited instead of serving the vision those franchises carried. The products changed in ways anyone can point to on screen. A captured critic layer protects the change and punishes the people who object to it. And when the audience walks away, the audience is named as the problem. Every link is evidenced from the public record: the makers' own words, the owners' own reports, a patent, a blacklist described by the man it happened to, and the score tables where critics and players grade the same work and land in different worlds. Where the record cuts against the argument, the record is printed too. Grand Theft Auto VI sold enormously and scored a 99 with critics. This paper does not claim it failed. It claims something narrower and harder to kill: the game was transformed, the room that graded it was curated, and the crown was handed out before the audience was allowed to grade it at all. When the audience verdict opened, it answered 3.7 against the critics' 99.</p>",
     "keywords": [],
     "license": "cc-by-4.0",
-    "version": 3,
+    "version": 4,
     "zenodo_url": "https://zenodo.org/records/24407246",
     "files": [
       {
