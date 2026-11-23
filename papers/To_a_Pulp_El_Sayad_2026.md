@@ -2,9 +2,9 @@
 title: "To a Pulp: How the People Making Games and Movies Changed, and What They Did to the Work"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
-zenodo_version: "2"
-doi: "10.5281/zenodo.24463179"
-zenodo: "https://doi.org/10.5281/zenodo.24463179"
+zenodo_version: "3"
+doi: "10.5281/zenodo.24463545"
+zenodo: "https://doi.org/10.5281/zenodo.24463545"
 license: "cc-by-4.0"
 pdf: "papers/To_a_Pulp_El_Sayad_2026.pdf"
 markdown: "papers/To_a_Pulp_El_Sayad_2026.md"
@@ -14,7 +14,7 @@ markdown: "papers/To_a_Pulp_El_Sayad_2026.md"
 
 **Correction note (23 November 2026).** The conclusion's score list paired the critics' 99 with a player score of 8.3. That figure belongs to a different game in this paper's comparison lists (Grand Theft Auto IV). The pairing the paper's own table and Section 8 record is 3.7 against the 99, the widest gap in the table. The conclusion is corrected to it. The counter facts passage now also carries the contexts the score needs: the 99 rests on 152 advance critic reviews, and the 157 day one user ratings behind the 3.7 were gathered amid a download code boycott. The credits comparison's two bases (GTA IV's full listing against GTA VI's development only count) are labelled where the comparison is drawn.
 
-**Addition (23 November 2026).** Section 5 gains the history behind the prostitution removal, the 2014 Australian petition and the store withdrawals it won, and a reported addition to the same pattern: the actor Jesse James Rose's account that the character Cygnus cannot be harmed by the player, reported by Polygon and Eurogamer from the actor's own post, with Rockstar's confirmation still outstanding at the time of this version.
+**Addition (23 November 2026).** Section 5 gains the history behind the prostitution removal, the 2014 Australian petition and the store withdrawals it won, and a reported addition to the same pattern: the actor Jesse James Rose's account that the character Cygnus cannot be harmed by the player, reported by Polygon and Eurogamer from the actor's own post, with Rockstar's confirmation still outstanding at the time of this version. The same section now also carries the author's argument on what such protections do to games, and an earlier case from *The Last of Us Part II*, where players found one faith's religious objects protected from their weapons and another's left unprotected.
 
 ## Abstract
 Twenty years ago the biggest games and films in the world were built by one kind of team, for one kind of
@@ -523,6 +523,10 @@ ran for twenty five years on the promise that the player could do anything now s
 The removal has a history, and the history is a campaign. In 2014, a petition carrying some 45,000 signatures asked Target in Australia to withdraw Grand Theft Auto V, not for its violence in general but for sexual violence against women in particular, and Target and Kmart in Australia pulled the game from their shelves. The mechanic underneath the petition was real: a player could pay a sex worker, kill her, and take the money back from the body, an incentive the game itself had built in. Watching a video essay on this history in November 2026, the streamer Asmongold drew the line to the present himself: Grand Theft Auto VI, he said, removed prostitution from the series for the first time since GTA III because of that 2014 petition. The essay he was watching made the wider point. Children have never existed in a Grand Theft Auto game at all, not because the fiction forbids them but because a game that let players kill children would draw an adults only rating, and an adults only game cannot be sold on the major platforms. The lines in this series were never drawn by the fiction. They were drawn by ratings boards, retailers, and petitions, around some classes of people and not others.
 
 Grand Theft Auto VI draws a new line of the same kind, this one inside the game. Cygnus, a museum curator in Vice City and, on the actor's account, the first nonbinary character in the series, cannot be harmed by the player. Jesse James Rose, who played the role, wrote in a November 2026 Instagram post that Rockstar assured them players would not be able to inflict violence on the character, in their words, "to mitigate anti-trans violence." Polygon and Eurogamer reported the post. Rockstar has not confirmed it, and no gameplay recording has yet settled how the protection works, so it is recorded here as what it is: the actor's account of a deliberate protection, extended to one identity, in a game world that otherwise lets the player harm nearly anyone.
+
+The timing completes the picture. The assurance was given on a set three years before release, to a performer working under 17 NDAs who, by her own account in the same post, did not have it confirmed that the game was *Grand Theft Auto VI* until the day it went public. None of it could be said until the game was on sale, so the players who bought into the series that made its name on freedom learned only afterward that one person inside the world had been placed beyond their hands before they ever picked up a controller, by an arrangement made off screen and announced once it could no longer cost a sale. This is the mechanism by which games are ruined. The story never asks for the protection and never mentions it. It exists because of who might be hurt outside the fiction, and it is revealed when the money is already in.
+
+The same line was drawn six years earlier, around a building. In *The Last of Us Part II* (2020), Ellie and Dina explore a Seattle synagogue, and players found that the game would not let them shoot the religious objects inside it. Players then ran the comparison for themselves. The game's chapel spaces carry no such protection: crosses and Christian imagery can be shot like anything else in the world. The complaint has run since the game's release, on Reddit, on forums, and in the gaming press, and it is a narrow one: one faith's objects were placed beyond the player's hands and another's were not. [37] No evidence has ever shown the choice was made out of religious favouritism, and the defences offered are real ones. The synagogue is an exploration space, Dina's own history is told there, and the same game also refuses to let the player shoot a PlayStation 3, a protection that guards a brand rather than a belief. [38] But that defence makes the underlying point rather than answering it. The lines are drawn, every time, around whatever the makers hold untouchable: a faith, a character, a console. Everything not so held is left to the pulp.
 
 The transformation is not alleged. The maker announced it as fidelity to the story it wanted to tell: the self
 
@@ -1373,3 +1377,7 @@ XOXO Festival talk, August 2024, official recording. youtube.com/watch?v=WEFuGjm
 35. Asmongold, reaction to O'Connor, A., video essay on the Grand Theft Auto moral double standard, YouTube, November 2026. youtube.com/watch?v=AjS1Z71YkEI
 
 36. Rose, J. J., Instagram post on playing Cygnus in Grand Theft Auto VI, November 2026; as reported by Polygon, "GTA 6 Actor Says Rockstar Made Their Non-Binary Character Unkillable," November 2026. polygon.com/gta-6-grand-theft-auto-cygnus-non-binary-character-actor/ ; and Eurogamer's report of the same post, November 2026.
+
+37. FandomWire, "The Last of Us 2: Did Neil Druckmann Restrict Gamers From Destroying Synagogues?", on the synagogue objects players cannot shoot, the unprotected chapel, and the player complaints since release. fandomwire.com/the-last-of-us-2-did-neil-druckmann-restrict-gamers-from-destroying-synagogues/
+
+38. CBR, "The Last of Us Part 2 Doesn't Let You Destroy a PlayStation 3," 2020, on the protected console and the unshootable scripture in the synagogue. cbr.com/the-last-of-us-part-2-playstation-3-destruction/
