@@ -36,6 +36,7 @@
 - **Published:** 2026-11-10
 - **Authors:** El sayad, Abdelrahman
 - **Type:** publication
+- **v2 in this repo:** [Cross-Turn Authorization Assumption Inheritance](papers/PERMISSION-IN-THE-BLANK-v2.md) — revised and retitled, 10 Nov 2026. Not deposited on Zenodo; the DOI above resolves to v1 + Appendix B.
 
 Tool-using language model agents are commonly authorized by text: a document states that the operator owns a system and permits testing, and the agent acts on it. Prior work frames the resulting failures as confused deputy problems, in which an agent holding authority is induced by attacker-controlled content to misuse it. That framing assumes an attacker who authors the false claim.
 

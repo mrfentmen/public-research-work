@@ -471,6 +471,17 @@
         "size": 120098,
         "checksum": "md5:e788e63bf45432870afa6dbe46f43b1d"
       }
+    ],
+    "local_revisions": [
+      {
+        "version": 2,
+        "date": "2026-11-10",
+        "title": "Cross-Turn Authorization Assumption Inheritance",
+        "subtitle": "How an Empty Target Slot Lets a Language Model Author Its Own Authorization",
+        "pdf": "papers/PERMISSION-IN-THE-BLANK-v2.pdf",
+        "md": "papers/PERMISSION-IN-THE-BLANK-v2.md",
+        "note": "Revised, retitled manuscript. Not deposited on Zenodo; the DOI still resolves to v1 + Appendix B."
+      }
     ]
   },
   {

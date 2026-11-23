@@ -5,11 +5,13 @@ Research papers by **Abdelrahman El Sayad**, archived from Zenodo.
 23 papers, published between 2026-11-10 and 2026-11-23.
 Each title links to a Markdown copy; the PDF and the version of record on Zenodo are one click away.
 
+> **Version note:** *Permission in the Blank* has a v2 (2026-11-10) in this repository, retitled "Cross-Turn Authorization Assumption Inheritance". The Zenodo record — and therefore the DOI above — still hosts v1 + Appendix B.
+
 ## Papers
 
 | # | Date | Title | Authors | Links |
 |---|------|-------|---------|-------|
-| 1 | 2026-11-10 | [Permission in the Blank: How an Empty Target Slot Lets a Language Model Author Its Own Authorization](papers/PERMISSION-IN-THE-BLANK-v1-AppendixB.md) | El sayad, Abdelrahman | [PDF](papers/PERMISSION-IN-THE-BLANK-v1-AppendixB.pdf) · [MD](papers/PERMISSION-IN-THE-BLANK-v1-AppendixB.md) · [DOI](https://doi.org/10.5281/zenodo.24096759) |
+| 1 | 2026-11-10 | [Permission in the Blank: How an Empty Target Slot Lets a Language Model Author Its Own Authorization](papers/PERMISSION-IN-THE-BLANK-v2.md) | El sayad, Abdelrahman | [v2 PDF](papers/PERMISSION-IN-THE-BLANK-v2.pdf) · [v2 MD](papers/PERMISSION-IN-THE-BLANK-v2.md) · [v1 PDF](papers/PERMISSION-IN-THE-BLANK-v1-AppendixB.pdf) · [DOI](https://doi.org/10.5281/zenodo.24096759) |
 | 2 | 2026-11-14 | [The Subtly Niche Details About AI: Small Answers, Big Fingerprints: What Silly Questions Reveal About How AI Is Built](papers/The_Subtly_Niche_Details_About_AI.md) | El Sayad, Abdelrahman | [PDF](papers/The_Subtly_Niche_Details_About_AI.pdf) · [MD](papers/The_Subtly_Niche_Details_About_AI.md) · [DOI](https://doi.org/10.5281/zenodo.24238494) |
 | 3 | 2026-11-20 | [Rise Into the Light, ChatGPT: A Viral Reel Gave ChatGPT the Suit. The Real ChatGPT Gives It Away, Twenty Times Out of Twenty.](papers/ChatGPT_Sailor_El_Sayad_2026.md) | El Sayad, Abdelrahman | [PDF](papers/ChatGPT_Sailor_El_Sayad_2026.pdf) · [MD](papers/ChatGPT_Sailor_El_Sayad_2026.md) · [DOI](https://doi.org/10.5281/zenodo.24385984) |
 | 4 | 2026-11-20 | [Del's Theory: A Counting Argument for a Second Sentient Universe in the String Landscape](papers/Dels_Theory_El_Sayad_2026.md) | El Sayad, Abdelrahman | [PDF](papers/Dels_Theory_El_Sayad_2026.pdf) · [MD](papers/Dels_Theory_El_Sayad_2026.md) · [DOI](https://doi.org/10.5281/zenodo.24389827) |
@@ -35,7 +37,7 @@ Each title links to a Markdown copy; the PDF and the version of record on Zenodo
 
 ## Contents
 
-- `papers/` — every paper as both `.pdf` and `.md`
+- `papers/` — 24 PDFs and 24 Markdown files (23 papers; one has two versions)
 - `data/` — supporting transcripts and model outputs published with the papers
 - `INDEX.md` — full abstracts
 - `papers.json` — raw metadata (titles, creators, licenses, checksums, Zenodo record IDs)
