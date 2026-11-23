@@ -2,15 +2,19 @@
 title: "To a Pulp: How the People Making Games and Movies Changed, and What They Did to the Work"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
-zenodo_version: "1"
-doi: "10.5281/zenodo.24407246"
-zenodo: "https://doi.org/10.5281/zenodo.24407246"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24463179"
+zenodo: "https://doi.org/10.5281/zenodo.24463179"
 license: "cc-by-4.0"
 pdf: "papers/To_a_Pulp_El_Sayad_2026.pdf"
 markdown: "papers/To_a_Pulp_El_Sayad_2026.md"
 ---
 # To a Pulp: How the People Making Games and Movies Changed, and What They Did to the Work
 **Abdelrahman El Sayad**
+
+**Correction note (23 November 2026).** The conclusion's score list paired the critics' 99 with a player score of 8.3. That figure belongs to a different game in this paper's comparison lists (Grand Theft Auto IV). The pairing the paper's own table and Section 8 record is 3.7 against the 99, the widest gap in the table. The conclusion is corrected to it. The counter facts passage now also carries the contexts the score needs: the 99 rests on 152 advance critic reviews, and the 157 day one user ratings behind the 3.7 were gathered amid a download code boycott. The credits comparison's two bases (GTA IV's full listing against GTA VI's development only count) are labelled where the comparison is drawn.
+
+**Addition (23 November 2026).** Section 5 gains the history behind the prostitution removal, the 2014 Australian petition and the store withdrawals it won, and a reported addition to the same pattern: the actor Jesse James Rose's account that the character Cygnus cannot be harmed by the player, reported by Polygon and Eurogamer from the actor's own post, with Rockstar's confirmation still outstanding at the time of this version.
 
 ## Abstract
 Twenty years ago the biggest games and films in the world were built by one kind of team, for one kind of
@@ -516,6 +520,10 @@ summarized the shipped rules in one line: "You can't kiss anyone except your par
 
 ran for twenty five years on the promise that the player could do anything now ships with a fidelity system.
 
+The removal has a history, and the history is a campaign. In 2014, a petition carrying some 45,000 signatures asked Target in Australia to withdraw Grand Theft Auto V, not for its violence in general but for sexual violence against women in particular, and Target and Kmart in Australia pulled the game from their shelves. The mechanic underneath the petition was real: a player could pay a sex worker, kill her, and take the money back from the body, an incentive the game itself had built in. Watching a video essay on this history in November 2026, the streamer Asmongold drew the line to the present himself: Grand Theft Auto VI, he said, removed prostitution from the series for the first time since GTA III because of that 2014 petition. The essay he was watching made the wider point. Children have never existed in a Grand Theft Auto game at all, not because the fiction forbids them but because a game that let players kill children would draw an adults only rating, and an adults only game cannot be sold on the major platforms. The lines in this series were never drawn by the fiction. They were drawn by ratings boards, retailers, and petitions, around some classes of people and not others.
+
+Grand Theft Auto VI draws a new line of the same kind, this one inside the game. Cygnus, a museum curator in Vice City and, on the actor's account, the first nonbinary character in the series, cannot be harmed by the player. Jesse James Rose, who played the role, wrote in a November 2026 Instagram post that Rockstar assured them players would not be able to inflict violence on the character, in their words, "to mitigate anti-trans violence." Polygon and Eurogamer reported the post. Rockstar has not confirmed it, and no gameplay recording has yet settled how the protection works, so it is recorded here as what it is: the actor's account of a deliberate protection, extended to one identity, in a game world that otherwise lets the player harm nearly anyone.
+
 The transformation is not alleged. The maker announced it as fidelity to the story it wanted to tell: the self
 
 insertion doctrine of section four, operating as a design decision.
@@ -536,7 +544,11 @@ rated generally unfavorable, from the first 157 ratings: 40 positive, 23 mixed, 
 
 critics' 99 on a single scale, that is a gap of 62 points, the widest in this paper's table. The reading is early,
 
-small, and self selected, and it will move as more ratings land. It is recorded here as what it is, the first
+small, and self selected, and it will move as more ratings land. Two contexts belong beside it: the
+
+critics' 99 rests on 152 advance reviews, and the day one user ratings were gathered while a download
+
+code boycott was urging low scores from players who had not been given codes. It is recorded here as what it is, the first
 
 verdict the audience was allowed to give, on a score the platform had already been policing: Metacritic
 
@@ -1107,9 +1119,9 @@ men who are behind schedule. Daniel Vávra, defending the Kingdom Come change, r
 
 unit of dismissal, the "very small and very loud minority." Volition's official Saints Row account, facing the
 
-backlash to the reboot reveal, posted: "We are not backing down on this game." The studio closed the
+backlash to the reboot reveal, posted: "We are not backing down on this game." The studio closed in
 
-following year. The audience it would not back down to was the only one it had.
+2023, the year after the game it would not back down on was released. The audience it would not back down to was the only one it had.
 
 The press layer performs the same move on the audience directly. When players objected that solicitation
 
@@ -1177,7 +1189,7 @@ own politics. The products changed in ways that can be listed, counted, and watc
 
 should have reported the change instead curated its membership, graded the change at 99 and 82 and 62, and
 
-watched the players answer 8.3 and 4.0 and 1.7. And when the players left, they were told the product was
+watched the players answer 3.7 and 4.0 and 1.7. And when the players left, they were told the product was
 
 never for them, that a modern audience was coming, that they were a loud minority, an incel culture, men
 
@@ -1357,3 +1369,7 @@ Gylfaginning, Faulkes translation.
 full talk on the GDC official YouTube channel. youtube.com/watch?v=GfMsxjWgUbI ; Belair, K.,
 
 XOXO Festival talk, August 2024, official recording. youtube.com/watch?v=WEFuGjmGq1I
+
+35. Asmongold, reaction to O'Connor, A., video essay on the Grand Theft Auto moral double standard, YouTube, November 2026. youtube.com/watch?v=AjS1Z71YkEI
+
+36. Rose, J. J., Instagram post on playing Cygnus in Grand Theft Auto VI, November 2026; as reported by Polygon, "GTA 6 Actor Says Rockstar Made Their Non-Binary Character Unkillable," November 2026. polygon.com/gta-6-grand-theft-auto-cygnus-non-binary-character-actor/ ; and Eurogamer's report of the same post, November 2026.
