@@ -2,9 +2,9 @@
 title: "The One Way Street: Why Time Travel Only Runs Forward"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
-zenodo_version: "1"
-doi: "10.5281/zenodo.24407297"
-zenodo: "https://doi.org/10.5281/zenodo.24407297"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462771"
+zenodo: "https://doi.org/10.5281/zenodo.24462771"
 license: "cc-by-4.0"
 pdf: "papers/The_One_Way_Street_El_Sayad_2026.pdf"
 markdown: "papers/The_One_Way_Street_El_Sayad_2026.md"
@@ -13,6 +13,8 @@ markdown: "papers/The_One_Way_Street_El_Sayad_2026.md"
 **Abdelrahman El Sayad**
 
 November 2026
+
+**Correction note (23 November 2026).** Section 5 attributed the counting argument to The Neighbors and counted "possible universes." The counting argument is Del's Theory's, The Neighbors borrows it as analogy, and the Theory counts realised universes. The passage now names which paper holds which claim, and the reference list cites Del's Theory by its published title. The conclusion now labels its central claim as argued from this essay's framing, not proven.
 
 ## Abstract
 Time travel has a direction problem that most discussions skip. Travel into the future is not science fiction. It
@@ -306,9 +308,11 @@ A companion work by the same author asks what follows if some reports of apparit
 
 not as visits from the dead, but as cross sections of living beings whose dimensions exceed ours, noticed
 
-only in the moment of crossing. The counting argument behind that companion work holds that, in a finite
+only in the moment of crossing. That companion work (The Neighbors) borrows, as analogy only, a counting
 
-landscape of some 10^500 possible universes, at least one more universe containing sentient life is plausible
+argument that belongs to a third paper, Del's Theory: in a finite landscape of some 10^500 realised
+
+universes, at least one more universe containing sentient life is plausible
 
 rather than miraculous (El Sayad 2026). The point for the present essay is narrower. The geometry of higher
 
@@ -335,7 +339,13 @@ form a closed loop, and every event in the loop causes the events that cause it.
 
 because nothing can be. The film works because it respects the bottleneck: the traveler arrives in the past
 
-only in the sense that he was always part of it. The loop carries a cost, and honesty requires naming it.
+only in the sense that he was always part of it. And the loop is not a counterexample to this essay's
+
+claim, because it is not a return lane: nobody travels back carrying anything new, nobody returns with
+
+anything gained, and nothing in the loop moves against the street's direction. It is a circuit drawn on
+
+the one way street, not a way off it. The loop carries a cost, and honesty requires naming it.
 
 Nothing inside the loop explains where its information came from. Skynet is built from wreckage that
 
@@ -386,7 +396,7 @@ correct map.
 ## 7. Conclusion
 Time travel only runs forward. That sentence is not a guess about future engineering. It is a summary of the
 
-present record. Forward travel is measured, in nanoseconds, by flown clocks, and corrected for daily by
+present record. The claim is argued here, from the dimension and timeline framing this essay builds, and it is not a proven theorem. Forward travel is measured, in nanoseconds, by flown clocks, and corrected for daily by
 
 navigation satellites. Backward travel requires closed timelike curves, and every known route to one
 
@@ -417,7 +427,7 @@ going the same way.
 ## References
 Abbott, E. A. (1884). Flatland: A Romance of Many Dimensions. Seeley and Co.
 
-El Sayad, A. (2026). A counting argument on sentient life in the string landscape. Zenodo. DOI:
+El Sayad, A. (2026). Del's Theory. Zenodo. DOI:
 
 10.5281/zenodo.24389827.
 

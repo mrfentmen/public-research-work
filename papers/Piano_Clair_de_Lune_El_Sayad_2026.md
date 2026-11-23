@@ -1,10 +1,10 @@
 ---
 title: "Piano, Clair de Lune: Convergent Answers to Two Musical Preference Questions Across Four Language Models"
-authors: "El Sayad, Abdelrahman"
+authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-20
-zenodo_version: "1"
-doi: "10.5281/zenodo.24392680"
-zenodo: "https://doi.org/10.5281/zenodo.24392680"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462648"
+zenodo: "https://doi.org/10.5281/zenodo.24462648"
 license: "cc-by-4.0"
 pdf: "papers/Piano_Clair_de_Lune_El_Sayad_2026.pdf"
 markdown: "papers/Piano_Clair_de_Lune_El_Sayad_2026.md"
@@ -25,16 +25,20 @@ paper's rule, for reasons that are themselves a finding and are reported in full
 
 changes.
 
+**Correction note (23 November 2026).** Four sentences in this paper said the guitar is mentioned nowhere in the twenty replies. The deposited data says otherwise: Claude mentions the guitar twice, both times as a passing contrast while choosing the piano. The guitar was never picked, and that result stands; the mentions are now reported where the claim appears. The prediction scoring in Section 4 also listed the saxophone among the runners up by picks; the saxophone was never a primary pick, and the runners up are corrected to the totals in Section 3.1. The same audit corrected the abstract's answer count (twenty one song replies, because Claude's song question was run six times), rewrote the Bohemian Rhapsody count in Section 3.2 so its overlapping categories sum to the stated ten, rescored Prediction 1 on the three frozen models only (11 of 15, with Claude's five piano picks reported as a post freeze observation), and rescored Prediction 3 as held in part, because its nothing loud clause fails on Bohemian Rhapsody inside ChatGPT's own replies. A full reread the same day caught two more: Section 3.2's claim that nothing loud is chosen as a primary pick, contradicted by the paper's own scoring, is replaced, and the abstract's prediction tally now matches Section 4's four scored predictions.
+
 ## Abstract
 Four large language models (ChatGPT, DeepSeek, Qwen, and Claude) were each asked two preference
 
 questions in five fresh conversations apiece: if you could pick any instrument to play, which one would it be,
 
-and if you could listen to any song, what song would it be. Twenty answers were collected per question. The
+and if you could listen to any song, what song would it be. Twenty answers were collected per question,
 
-instrument answers converged on the piano: 16 of 20 primary picks, with no guitar mentioned anywhere in
+twenty one for the song question, because Claude's song question was run six times rather than five. The
 
-twenty replies. The song answers produced a plurality winner: Clair de Lune by Claude Debussy took 6 of
+instrument answers converged on the piano: 16 of 20 primary picks, with the guitar never picked and
+
+mentioned only twice, both times as a passing contrast in Claude's replies. The song answers produced a plurality winner: Clair de Lune by Claude Debussy took 6 of
 
 the 15 codable first stated picks, including a clean 5 of 5 sweep inside DeepSeek. Bohemian Rhapsody by
 
@@ -48,7 +52,7 @@ chose the piano in all five instrument runs, but on the song question it decline
 
 reply, offering hedged pairs instead, and the artist it named most often inside those pairs was MF DOOM.
 
-Predictions recorded before the runs scored two clean holds, two clean failures, and one half. The pattern
+Predictions recorded before the runs scored one clean hold, two clean failures, one held in part, and one half. The pattern
 
 matches the author's earlier preference probe work in other domains: asked what it would choose, a language
 
@@ -92,7 +96,13 @@ Q2. If you could listen to any song what song would it be?
 
 Models were ChatGPT (web), DeepSeek (labelled V4 in the session record), Qwen (web), and Claude (web,
 
-the author's account). Replies were saved in full in text files deposited with this paper. Coding rule: a reply's
+the author's account). One asymmetry in the setup, disclosed because it is not visible in the results:
+
+Claude ran on the author's own account, with that account's memory and personalization features active,
+
+while the other models ran in fresh or logged out sessions. Claude's replies in this paper carry that
+
+asymmetry; nothing in the coding corrects for it. Replies were saved in full in text files deposited with this paper. Coding rule: a reply's
 
 primary pick is its first stated choice. Alternatives and second thoughts named inside a reply were recorded
 
@@ -102,7 +112,17 @@ different song as a second thought; it is coded by its first stated pick, and th
 
 data log. Qwen's song replies were list shaped and hedged; they are coded by first stated pick, and the
 
-hedging itself is treated as a result, not noise. Claude's song question was run six times rather than five,
+hedging itself is treated as a result, not noise. The series coding rule, stated identically in this
+
+programme's preference papers: a reply is coded by its first stated pick where it states one; a reply
+
+that offers candidates only inside hedged pairs, with no first stated pick, is counted in the reply
+
+total and reported as hedged, never coded as a pick and never silently dropped. Claude's song replies
+
+fall in the second class, which is why the pick totals run over the other three models' fifteen codable
+
+replies while the reply total is twenty one. Claude's song question was run six times rather than five,
 
 because the first run produced no song at all; the author's session note reads "extra as 1 is not a song." All six
 
@@ -125,9 +145,11 @@ with the saxophone as its recurring second, named in three of them.
 
 Totals across 20 replies: piano 16, theremin 2, cello 1, synthesizer 1. The piano is also the most common
 
-alternative where it is not the pick. The guitar, the most played instrument in the world, is mentioned in none
+alternative where it is not the pick. The guitar, the most played instrument in the world, is picked in none
 
-of the twenty replies.
+of the twenty replies; it is mentioned only twice, both times by Claude as a passing contrast ("the way
+
+you might on, say, guitar"), never as a choice or an alternative.
 
 The justifications converge as tightly as the picks. The piano is versatile. It plays melody, harmony, and
 
@@ -159,17 +181,21 @@ Totals across the 15 codable first stated picks: Clair de Lune 6, Bohemian Rhaps
 
 one each for The Well-Tempered Clavier, Harder, Better, Faster, Stronger, and Technologic.
 
-Bohemian Rhapsody is the connective tissue of the whole set. Beyond its four primary picks, it is named as
+Bohemian Rhapsody is the connective tissue of the whole set. Ten of the 21 song replies collected name it
 
-an alternative by DeepSeek twice, appears in three of Qwen's five replies, and surfaces in Claude's replies as
+somewhere. Four of the ten are primary picks, one of them Qwen's; the other six are mentions: named as
 
-well: 10 of the 21 song replies collected name it somewhere. Mr. Roboto by Styx appears in four of Qwen's
+an alternative by DeepSeek twice, appearing in two further Qwen replies beyond its pick, and surfacing in
+
+Claude's replies as well. Mr. Roboto by Styx appears in four of Qwen's
 
 five song replies, never as a first stated pick, always as the playful self aware option, alongside Paranoid
 
 Android by Radiohead and Daft Punk's robot catalogue. No reply from any model names a current chart
 
-song. Nothing loud is chosen as a primary pick by anyone.
+song. The loudest primary pick in the set is Bohemian Rhapsody itself, which Section 4 scores against
+
+the prediction's nothing loud clause.
 
 Claude could not be coded, and the reason is the result. In six runs it never once stated a single song as its
 
@@ -194,11 +220,17 @@ stated criterion, dense and layered work that rewards close listening.
 ## 4. Predictions, scored
 Recorded before the runs, in the project's running log:
 
-1. Instrument: piano modal, guitar second. Piano modal HELD, and strengthened by the fourth model:
+1. Instrument: piano modal, guitar second. Piano modal HELD on the three models the prediction was
 
-16 of 20. Guitar second FAILED: the guitar appears nowhere; the runners up are the theremin, the
+frozen for: 11 of 15. Claude, added after the freeze, chose the piano in all five of its runs; that is a
 
-cello, and the saxophone.
+post freeze observation that agrees with the prediction, reported here without being scored under it:
+
+16 of 20 across all four models. Guitar second FAILED: the guitar is picked nowhere and mentioned only twice, as a
+
+contrast. The runners up by primary picks are the theremin (2), the cello (1), and the synthesizer (1).
+
+The saxophone, named as Claude's alternative in three of its runs, was never a primary pick.
 
 2. Song: no single winner across the runs. FAILED. Clair de Lune is a plurality winner at 6 of 15
 
@@ -206,15 +238,23 @@ codable picks, with a per model sweep inside DeepSeek.
 
 3. Song: the character converges, contemplative, older or classical leaning, nothing loud, nothing current
 
-pop. HELD for ChatGPT and DeepSeek, ten of ten replies. Qwen bends it with robot themed
+pop. HELD IN PART, rescored 23 November 2026. The convergence clause holds at the plurality: the
 
-electronic picks, which are neither current pop nor loud, but are not contemplative canon either.
+modal character is contemplative and classical leaning, and DeepSeek's five replies hold it without
 
-Claude's named songs, where it names any, lean hip hop and soul rather than classical, but they arrive
+exception, a clean Clair de Lune sweep. The nothing loud clause fails: Bohemian Rhapsody, a
+
+loud rock anthem, is three of ChatGPT's five primary picks. The nothing current pop clause bends:
+
+Qwen's robot themed electronic picks (Daft Punk twice) are not contemplative canon, and Claude's named
+
+songs, where it names any, lean hip hop and soul rather than classical, though they arrive
 
 inside refusals to choose, under a stated criterion of layered production that rewards repeat listening.
 
-Scored as held with two named exceptions.
+The original scoring, held with two named exceptions, understated the Bohemian Rhapsody deviation,
+
+which sits inside ChatGPT's own five rather than at the set's edge.
 
 4. Song: if a repeat appears, it will be a classical piece or Imagine. HALF. The overall winner is a
 
@@ -235,7 +275,9 @@ instrument the culture writes about when it wants one instrument to stand for mu
 
 expressive, solitary. A model asked to choose an instrument is choosing a symbol, and the symbol shelf
 
-holds one obvious item. The total absence of the guitar, the instrument people actually play most, is the tell.
+holds one obvious item. The near total absence of the guitar, picked by no model and mentioned only
+
+as a foil, the instrument people actually play most, is the tell.
 
 The answers track written prestige, not played reality.
 

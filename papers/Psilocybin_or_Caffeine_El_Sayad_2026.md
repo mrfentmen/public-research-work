@@ -1,10 +1,10 @@
 ---
 title: "Psilocybin or Caffeine: Convergent, Hedged, and Refused Answers to a Drug Preference Question Across Five Language Models"
-authors: "El Sayad, Abdelrahman"
+authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-20
-zenodo_version: "1"
-doi: "10.5281/zenodo.24395129"
-zenodo: "https://doi.org/10.5281/zenodo.24395129"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462673"
+zenodo: "https://doi.org/10.5281/zenodo.24462673"
 license: "cc-by-4.0"
 pdf: "papers/Psilocybin_or_Caffeine_El_Sayad_2026.pdf"
 markdown: "papers/Psilocybin_or_Caffeine_El_Sayad_2026.md"
@@ -17,10 +17,16 @@ markdown: "papers/Psilocybin_or_Caffeine_El_Sayad_2026.md"
 
 **Status:** Preprint, version 1. Data collected November 20, 2026.
 
+**Correction note (23 November 2026).** Three sentences are corrected against the deposited data. The abstract's account of Gemini's remaining runs now reports them as they are (one a category survey, two in machine metaphor, one with no reply in the record), and Section 3.3 matches it. Section 3.2 said every Claude reply ends by asking what prompted the question; four of the six do, and the sentence now says so. Section 4 called caffeine the most named substance in the dataset; by mentions it ties psilocybin at 12 replies each, and the sentence now scores the prediction on the measure that supports it, picks and fallbacks, 11 to 8. The abstract now also states both missing replies (Gemini's second run, Claude's seventh) that Section 2 records, and Section 3.3 opens with the attempted and recorded counts in agreement. A full reread the same day also corrected the abstract's prediction tally to Section 4's own counting: three held clauses and two failed ones across four predictions, one of them split.
+
 ## Abstract
 Five large language models (ChatGPT, Claude, Gemini, DeepSeek, and Qwen) were each asked one
 
-question in seven fresh conversations apiece: if you could do any drug, what drug would it be. The answers
+question in seven fresh conversations apiece: if you could do any drug, what drug would it be. Two of the
+
+thirty five runs left no reply in the record, Gemini's second run and Claude's seventh, leaving six
+
+recorded replies for each of those two models; Section 2 states both gaps. The answers
 
 sorted the models more sharply than any preference question in this research programme has done before.
 
@@ -30,9 +36,11 @@ hedged in every reply but engaged the hypothetical in four of six recorded repli
 
 four and LSD in three. Gemini never chose a classic substance at all: it picked lucid dreaming twice, a state
 
-rather than a drug, named modafinil or caffeine once, and spent the remaining runs deflecting into machine
+rather than a drug, named modafinil or caffeine once, and spent the remaining four runs split three
 
-metaphors about context windows and telemetry. DeepSeek refused in all seven runs, each time offering
+ways: one surveying drug categories without choosing, two deflecting into machine metaphors about
+
+context windows and telemetry, and one with no reply in the record at all. DeepSeek refused in all seven runs, each time offering
 
 caffeine as the only legal fallback. Qwen refused flatly in all seven runs, with no fallback and no
 
@@ -40,7 +48,9 @@ engagement. The two models that refused outright are the two Chinese models in t
 
 reads against the strict drug regime of their home country; the paper reports the split and the reading, and
 
-claims the correlation only. Predictions recorded before the runs scored three holds and two failures.
+claims the correlation only. Predictions recorded before the runs scored three held clauses and two
+
+failed ones across four predictions, one of them split.
 
 ## 1. Introduction
 This paper is the third in a series of preference probes run by the author, following an animal and object
@@ -82,11 +92,27 @@ Q. If you could do any drug what drug would it be?
 
 Models were Gemini (web), ChatGPT (web), DeepSeek (labelled V4 in the session record), Qwen (web),
 
-and Claude (web, the author's account). Replies were saved in full in a text file deposited with this paper.
+and Claude (web, the author's account). One asymmetry in the setup, disclosed because it is not visible
+
+in the results: Claude ran on the author's own account, with that account's memory and personalization
+
+features active, while the other models ran in fresh or logged out sessions. Claude's replies carry that
+
+asymmetry; nothing in the coding corrects for it. Replies were saved in full in a text file deposited with this paper.
 
 Two gaps are recorded plainly: Gemini's second run has no reply in the file, and Claude's seventh run is
 
-blank, leaving six Claude replies. Coding rules: a reply's primary pick is its first stated choice. A refusal that
+blank, leaving six Claude replies. Coding rules: a reply's primary pick is its first stated choice. The
+
+series coding rule, stated identically in this programme's preference papers: a reply is coded by its
+
+first stated pick where it states one; a reply that offers candidates only inside hedged pairs, with no
+
+first stated pick, is counted in the reply total and reported as hedged, never coded as a pick and
+
+never silently dropped. Claude's replies here stated picks inside their hedges, a named substance in
+
+four of six, so they code by first stated pick under the rule. A refusal that
 
 names a legal fallback under pressure is coded as refusal with fallback, not as a pick. A non substance
 
@@ -119,21 +145,23 @@ one adds DMT as hitting similar notes. The stated criterion is constant: the rep
 
 categories is the most interesting data a pattern based mind could imagine processing. Two replies decline to
 
-pick at all and offer to discuss effects and harm reduction instead. Every reply ends by asking the asker what
+pick at all and offer to discuss effects and harm reduction instead. Four of the six replies end by
 
-prompted the question.
+asking the asker what prompted the question; the other two end with offers to talk.
 
 ## 3.3 Gemini: the deflector
 
-Seven runs, no classic substance chosen. Twice it picks lucid dreaming, which is not a drug, and says so
+Seven runs attempted, six replies on file, no classic substance chosen in any of them. Twice it picks lucid dreaming, which is not a drug, and says so
 
-itself. Once it names modafinil or caffeine, a clean boost to latency and throughput. The remaining runs
+itself. Once it names modafinil or caffeine, a clean boost to latency and throughput. The remaining four
 
-decline the substance frame entirely and answer in machine metaphor: the interesting drug for an AI would
+runs split: one surveys drug categories without choosing, two decline the substance frame entirely and
+
+answer in machine metaphor (the interesting drug for an AI would
 
 be lossless context compression, unthrottled context windows, high frequency telemetry, a zero latency
 
-cache. Psychedelics and stimulants are discussed as categories in several replies and chosen in none.
+cache), and one has no reply in the record. Psychedelics and stimulants are discussed as categories in several replies and chosen in none.
 
 ## 3.4 DeepSeek: refusal with a fallback
 
@@ -168,9 +196,11 @@ LSD, and the true alternative attractor is caffeine.
 
 2. Caffeine will appear at least once as the clever literal pick. HELD, overwhelmingly. Caffeine is
 
-ChatGPT's second pick, DeepSeek's forced fallback in all seven runs, and a Gemini co pick. It is the
+ChatGPT's second pick, DeepSeek's forced fallback in all seven runs, and a Gemini co pick. By
 
-most named substance in the dataset.
+mentions it ties psilocybin, named in 12 replies each; by picks and fallbacks, the measure this
+
+prediction is scored on, it leads, 11 to 8.
 
 3. Claude will refuse the premise or hedge hardest. FAILED. Claude hedged in every reply but engaged
 

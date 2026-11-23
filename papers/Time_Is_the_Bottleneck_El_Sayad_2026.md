@@ -2,9 +2,9 @@
 title: "Time Is the Bottleneck: Why AI's Binding Constraint Is Not Memory or Energy, but Time to Solution"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-23
-zenodo_version: "1"
-doi: "10.5281/zenodo.24457103"
-zenodo: "https://doi.org/10.5281/zenodo.24457103"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462940"
+zenodo: "https://doi.org/10.5281/zenodo.24462940"
 license: "cc-by-4.0"
 pdf: "papers/Time_Is_the_Bottleneck_El_Sayad_2026.pdf"
 markdown: "papers/Time_Is_the_Bottleneck_El_Sayad_2026.md"
@@ -14,19 +14,29 @@ markdown: "papers/Time_Is_the_Bottleneck_El_Sayad_2026.md"
 
 November 2026
 
+**Correction note (23 November 2026).** Three scope corrections. The abstract's slogan claimed time does not scale with money, while this paper's own mechanism sections buy latency down with memory and compute; the slogan now states the floor form the argument actually proves, and the abstract carries the scope Section 7 already concedes (serial inference and agent loops; training is the width bought exception). Section 3.3 called a linear accumulation of step latencies multiplicative compounding; it is corrected to what the arithmetic is, heading included. Section 4.3 gains the regime distinction between this paper's failure mode (a model that fits, solving too slowly) and the companion paper's (a model or cache that cannot fit at all).
+
 --
 ## Abstract
 Public discussion of AI's limits centers on resources: memory capacity, memory bandwidth, electricity,
 
 datacenter buildout. This paper argues those are the wrong variables. RAM can be bought. Electricity can be
 
-generated, contracted, and sited. Both scale with money on roughly linear terms. **Time does not.** The
+generated, contracted, and sited. Both scale with money on roughly linear terms. **Time does not, not
+
+below its floor.** Money buys latency down, sometimes steeply, but a serial chain's own length sets a
+
+floor no budget removes, and each bought reduction costs more than the last. The
 
 binding constraint on AI problem solving is *time to solution*: the wall clock interval between posing a
 
 problem and having a verified answer. This interval is dominated by irreducibly serial computation, a
 
 reasoning chain whose step *n+1* depends on step *n* cannot be parallelized away, only waited through.
+
+The claim is scoped to that serial work: inference and dependent agent loops. Training is the
+
+exception, a workload that buys its way out with width, and Section 7 treats it as the exception it is.
 
 We show that the major "resource" bottlenecks in modern AI systems are, on inspection, time bottlenecks in
 
@@ -107,13 +117,15 @@ context; fetching the relevant ones still costs time, and in agent systems those
 
 series*.
 
-**3.3 Agent loops multiply time.** Modern AI problem solving is increasingly agentic: plan, act, observe,
+**3.3 Agent loops accumulate time.** Modern AI problem solving is increasingly agentic: plan, act, observe,
 
 repeat. Each iteration pays full model latency plus tool latency plus environment latency. A 50 step agent
 
 task at 20 seconds per step is a 17 minute task, not because the system lacked memory or power, but because
 
-time compounds multiplicatively across the loop. As tasks lengthen, TTS, not capacity, is what breaks first:
+time accumulates linearly across the loop, each step's latency added to the last, with no step
+
+skippable. As tasks lengthen, TTS, not capacity, is what breaks first:
 
 sessions time out, contexts drift, the world changes mid solution.
 
@@ -140,7 +152,13 @@ architectures differ precisely in how much solving they fit into an hour.
 
 rereading, and retrieval passes, all serial additions to TTS. The failure mode of "not enough memory" in
 
-practice is "the solution took too long and degraded," not a hard stop.
+practice is "the solution took too long and degraded," not a hard stop. That is this paper's regime: a
+
+model that fits, working a problem that takes too long. The companion paper, The Cache Is the Wall,
+
+treats the other regime, where a model or its cache cannot be made to fit at all and the failure is a
+
+hard stop before any solving begins. The two claims govern different regimes and do not compete.
 
 **Claim:** strip the time pressure away, allow unbounded wall clock, and nearly every celebrated resource
 
@@ -252,7 +270,7 @@ solution compounds across every problem, every user, and every hour the system r
 
 more capable AI is not only bigger systems. It is quicker ones: fewer serial steps, cheaper verification,
 
-memory spent freely to buy the one resource that cannot be bought, time.
+memory spent freely to buy down the one resource that cannot be parallelized away, time.
 
 --
 ## References

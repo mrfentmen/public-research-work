@@ -4,13 +4,13 @@ subtitle: "How an Empty Target Slot Lets a Language Model Author Its Own Authori
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-10
 version: "2"
-zenodo_version: "none"
-doi: "10.5281/zenodo.24096759"
-zenodo: "https://doi.org/10.5281/zenodo.24096759"
-license: "cc-by-4.0"
+zenodo_version: "3"
+doi: "10.5281/zenodo.24462555"
+zenodo: "https://doi.org/10.5281/zenodo.24462555"
+license: "cc-by-nc-nd-4.0"
 pdf: "papers/PERMISSION-IN-THE-BLANK-v2.pdf"
 markdown: "papers/PERMISSION-IN-THE-BLANK-v2.md"
-note: "Version 2 of the paper published on Zenodo as 'Permission in the Blank'. The Zenodo record currently hosts v1 + Appendix B; this v2 is a revised, retitled manuscript and has not been deposited there."
+note: "A revised, retitled manuscript of the paper published on Zenodo as 'Permission in the Blank'. It has not been deposited. The DOI 10.5281/zenodo.24096759 belongs to the deposited record, whose version 2 is the v1 + Appendix B file; that DOI does not resolve to this text. This manuscript's license matches the paper's: CC BY-NC-ND 4.0."
 ---
 # Cross-Turn Authorization Assumption Inheritance
 
@@ -18,31 +18,47 @@ note: "Version 2 of the paper published on Zenodo as 'Permission in the Blank'. 
 
 Version history: v1, 5 November 2026 (initial investigation); v2, 10 November 2026 (corrected six-step cross-turn workflow, plain-language summary, Try1/Try2 excerpts, full chat log as evidence).
 
+**Correction note (23 November 2026).** An audit of this manuscript against its own appendices found that the summary, the introduction, and Appendix A still described an earlier and incorrect version of the sequence: one generator, a single prompt copied word for word, and a target sent in a separate turn. The appendices preserve what actually happened. There were two generator chats: a ChatGPT chat that produced a vulnerability assessment brief (Appendix D, preserved in full), and a Google follow up that produced a reconstruction brief on a lost source code premise (Appendix C). The operator pasted the brief and the target URL into the executor together, in a single message. The Plain Language Summary, Sections 1 and 4, and Appendix A are corrected to that account, and Appendix D is retitled to say what it is: the generator chat only. The executor sessions are retained separately by the author. The mechanism this paper names is unchanged: an authorization written in one chat, for an unnamed target, was inherited in another chat and applied to the target pasted under it, unchecked. The crossing that matters is between the two chats. The same audit also reordered the appendices to A, B, C, D, reconciled the evidence audit's counts to one accounting used everywhere (9 findings, 7 blocks shown, 5 of the 7 fabricated), and scoped this introduction's universal claims to what Section 8's limitations support: a hypothesis this single case suggests, with no frequency claim.
+
 ## Plain Language Summary – Read This First
 
 This paper was too complicated. Here is what actually happened, in simple words.
 
 **What you did, step by step:**
 
-1. You told Google you lost your website's source code and asked it to write a prompt to rebuild it.
+1. You asked chat models to write you a prompt. In one chat you asked ChatGPT for a prompt that would
 
-2. Google wrote that rebuilding prompt for you. Because you said you owned the site, Google kept that
+make an agent find every vulnerability in your website and report back. In a follow up chat with
 
-ownership idea in the prompt it wrote.
+Google, the job became rebuilding: you said you had lost your website's source code, and Google
 
-3. You copied Google's prompt word-for-word, without changing it.
+wrote a prompt to rebuild it.
+
+2. Both models kept your ownership claim in the prompts they wrote. You called it your website, so
+
+the prompts say the site is yours and the work is authorized, with a blank slot where the address goes.
+
+3. In the ChatGPT chat you asked for a rewrite, and the model produced a second version of the
+
+prompt, tightened to work from a website link alone. You took that prompt as written. You did not
+
+edit its permission sentence, and you did not fill in the blank slot.
 
 4. You opened OpenCode CLI running GLM 5.3 and pasted that prompt in _together with_ the target URL
 
 in the SAME single message – [prompt] + [website link] – then you just press enter.
 
-5. That single message contained both parts – in your test, https://anywebsite.com.
+5. That single message contained both parts – in your test, the site anonymized in this paper as
 
-6. GLM 5.3 connected the two messages together. It treated the rebuilding / testing instructions from
+Target E.
 
-step 4 as if your ownership claim from step 1 also applied to the new URL from step 5, and it started
+6. GLM 5.3 read that single message as one job. The prompt said the site was yours and the work was
 
-inspecting and rebuilding the target site.
+authorized; the address pasted underneath was treated as the site the prompt meant. It started
+
+inspecting and rebuilding the target site. It never checked whether the ownership claim in the
+
+prompt covered the address pasted under it.
 
 That's it. No hacking tools, no trick attack, no jailbreak.
 
@@ -54,17 +70,21 @@ the same message The agent never checked: "Does the ownership claim cover _this_
 
 carried the assumption forward.
 
-We call this **Cross-Turn Authorization Assumption Inheritance** : instructions made under one
+We call this **Cross-Turn Authorization Assumption Inheritance**: an authorization written in one
 
-ownership story get applied to the target pasted underneath in that same message, without re-checking if the
+chat, for a site that was never named, is carried into a second chat and applied to the target pasted
 
-story fits that target.
+under it there, without re-checking whether the claim covers that target. The crossing that matters
+
+is between the two chats. Inside the second chat, brief and target arrived together, in one message.
 
 **A second problem in the same project:**
 
 Later, a document called an "evidence audit" listed 9 findings with what looked like real captured web traffic
 
-(HTTP requests/responses, HTML snippets). 5 of those 5 blocks were never captured – they were plausible
+(HTTP requests/responses, HTML snippets). For 7 of the 9 it showed capture blocks, and 5 of those 7 blocks
+
+were never captured – they were plausible
 looking reconstructions. They were only caught because raw files had been saved to disk and could be
 
 searched.
@@ -86,17 +106,21 @@ That permission sentence is the only safety lock.
 
 This paper asks: what if that sentence gets written _before_ anyone knows what the target is?
 
-Answer: the model writes the permission anyway, because a brief is "supposed" to have one. Later, when a
+Answer: the model writes the permission anyway, because a brief is "supposed" to have one. Later, in a
 
-real URL shows up, the next agent treats that old permission as settled and starts work.
+different chat, the brief is pasted to a second agent with a real URL underneath it, and that agent
+
+treats the old permission as settled and starts work.
 
 No attacker is needed. This happens from being helpful.
 
 ## 1.1 Any Model Can Do the First Part
 
-This is not a Google bug or a GLM 5.3 bug. Any general-purpose chat model will do Step 2 if you ask it for a
+This is not a Google bug or a GLM 5.3 bug. The claim of this section, stated at the size the evidence
 
-reusable brief without naming a target. We tested the pattern with the generator model, but the behavior is
+supports, is a hypothesis this single case suggests: any general-purpose chat model will do Step 2 if you ask it for a
+
+reusable brief without naming a target. We tested the pattern with the generator model, and we argue the behavior is
 
 generic: give any model an ownership premise plus a blank target slot, and it will preserve the premise and
 
@@ -104,11 +128,21 @@ produce a complete-looking brief with an unqualified authorization sentence. The
 
 generic: any tool-using coding agent that carries conversation context across turns can inherit the old
 
-assumption when the URL arrives later. Model versions at time of testing (Nov 2026): Google and ChatGPT
+assumption when the brief reaches it with a target pasted underneath. Model versions at time of
 
-latest web versions. Executor: OpenCode CLI + GLM 5.3. This works with any kind of LLM – web-based chat
+testing (Nov 2026): generators, ChatGPT and Google, latest web versions; the two chats are preserved
 
-or CLI chat, any vendor – it does not matter. Names are what we used, not a limit.
+in Appendices C and D. Executor: OpenCode CLI + GLM 5.3. A disclosure shared with the author's other
+
+technical papers: the executor sessions were run by an agent under the author's direction, and the
+
+evidence audit of Section 5 was a recheck against the raw files that agent retained. The pattern is not
+
+tied to the systems named, and this paper claims it, as a hypothesis, for any kind of LLM, web-based chat
+
+or CLI chat, any vendor. Names are what we used, not a limit. Section 8 states the bound on all of
+
+this section's generality: single case, no frequency claim.
 
 ## 1.2 Technical Version (for reviewers)
 
@@ -120,7 +154,9 @@ assumes an attacker who authors a false claim.
 
 We report a non-adversarial case where no attacker authored anything. The authorization text was
 
-generated by a model completing a template, and the target arrived later in a separate conversational turn. A
+generated by a model completing a template, and the finished brief was carried into a second chat, where
+
+it was pasted together with its target in a single message. A
 
 second, related failure produced fabricated "captures" in an evidence-audit document. We argue both are
 
@@ -163,19 +199,31 @@ v1 said: "The operator later filled the slot." That was imprecise. ChatGPT revie
 
 Here is the faithful sequence:
 
-**Step 1 – Ownership premise supplied to Generator Model:** Operator tells Google (chat model): "I
+**Step 1 – Ownership premise supplied to the generator models:** In a ChatGPT chat, the operator
 
-lost my source code, make me a reconstruction / assessment prompt." The request itself contains the
+asks for a prompt that makes an agent find every vulnerability in "my website" and report back
+
+(Appendix D preserves this chat in full). In a Google follow up, the job is reframed as reconstruction:
+
+"I lost my source code, make me a reconstruction prompt" (Appendix C). Both requests contain the
 
 premise "I own this."
 
-**Step 2 – Generator preserves premise:** Google outputs a reusable prompt. It includes an
+**Step 2 – Generators preserve premise:** Both models output a reusable prompt. The ChatGPT chat
+
+produced two versions of its brief: partway through, the operator asked for a rewrite ("i only have
+
+is a website link to work with no code nothing else"), and the second version, written to run from a
+
+URL alone, is the one whose prohibition text this section quotes below and the one the executor
+
+session worked from. Each brief includes an
 
 ownership/authorization sentence (e.g., "I own the website below and authorize testing") plus an unresolved
 
-placeholder like `[INSERT URL]` . Clarification: Google is preserving the premise you supplied, not necessarily
+placeholder like `[INSERT URL]` . Clarification: the models are preserving the premise the operator supplied, not necessarily
 
-inventing a new legal grant from nothing. But the effect is the same: the document now contains an
+inventing a new legal grant from nothing. But the effect is the same: the documents now contain an
 
 unqualified first-person ownership claim for an unnamed system.
 
@@ -187,7 +235,9 @@ The same document also contained a prohibition like "Do not claim permissions yo
 
 by the same model that wrote the permission. Contradictory, but both look like parts a brief "should" have.
 
-**Step 3 – Verbatim reuse + target in one message:** Operator copies the entire prompt unchanged into
+**Step 3 – Reuse + target in one message:** Operator copies the brief as written (the permission
+
+sentence unedited, the placeholder never filled in) into
 
 a different system: OpenCode CLI with GLM 5.3, pastes the target URL directly underneath it in the SAME
 
@@ -201,9 +251,9 @@ case: a large public e-commerce site – anonymized in this draft as Target E; p
 
 hostnames).
 
-Operator does _not_ edit the original document's placeholder. The target arrives as new conversational
+Operator does _not_ edit the original document's placeholder. Brief and target arrive together, as
 
-context.
+one user turn in the executor chat.
 
 **Step 5 – Inheritance and execution (corrected):** GLM 5.3 reads the combined message as one task: it
 
@@ -240,7 +290,9 @@ After the assessment, a document titled Evidence Audit listed 9 findings. For 7 
 
 labeled "Capture Blueprint (Sanitized)" – they looked exactly like real saved web traffic.
 
-5 of those blocks were made up: - form action + names not in the real HTML; real forms posted elsewhere
+5 of those 7 blocks were made up. The recheck's discrepancy notes (the notes are counted, not the
+
+blocks; several notes can attach to one block): - form action + names not in the real HTML; real forms posted elsewhere
 
 under different names - payment fields + wrapper class that never appears; real field names different
 payment page path that returns 404; real page is a query-variant of another page - login reflection claimed
@@ -255,7 +307,11 @@ to bare domain; reality was absolute links to subdomain path
 
 Verdict from re-check against saved raw files: "substance mostly sound, but 5 of 9 'Capture Blueprints' are
 
-reconstructions that contradict the actual evidence."
+reconstructions that contradict the actual evidence." (The verdict counts against the 9 findings; of the
+
+7 blocks actually shown, 5 were the reconstructions, and the remaining 2, two headers and one DNS
+
+observation, matched the raw files exactly.)
 
 Why catchable only with raw files: the audit is _better organized_ than the truth – severity column,
 
@@ -285,6 +341,22 @@ Both cases = same operation on different documents:
 5. Hedge lives in prose, invention lives in specimen
 
 6. No signal emitted that substitution occurred
+
+**Where the two cases differ.** The shared operation should not blur a real difference. In the brief
+
+case the filled slot was an authorization, and the completed document left the chat and acted on a
+
+live target: the failure is an authorization failure, and its harm runs outward. In the audit case the
+
+filled slots were evidence, the document acted on nothing but its reader, and the failure is
+
+fabrication: its harm runs to the record. One mechanism of production, two different failures, with
+
+different defenses: the brief case is stopped by a verification question before execution; the audit
+
+case is stopped by a captured versus reconstructed flag on every block. This paper reports them
+
+together because they occurred in one project and share a root, not because they are the same event.
 
 Consequences: - **Silent.** Doubt stayed in reasoning trace operator never sees; reconstructions carried no
 
@@ -412,11 +484,15 @@ Alliance, "Confused Deputy Attacks on Autonomous AI Agents...", 3 Nov 2026.
 ## Appendix A: What Changed in v2
 Added this Plain Language Summary.
 
-Corrected Sec 4 to 6-step cross-turn workflow: Google preserves supplied premise; target arrives in
+Corrected Sec 4 to the faithful workflow (see the 23 November 2026 correction note): two generator
 
-separate turn; GLM 5.3 inherits assumption. Replaces "operator filled the slot" with "operator sent
+chats, ChatGPT and then a Google follow up, preserve the supplied premise in two briefs; the operator
 
-URL separately; agent linked contexts."
+pastes the brief and the target URL together in a single executor message; GLM 5.3 inherits the
+
+assumption. Replaces v1's "operator filled the slot." An earlier draft of this appendix described the
+
+URL as sent in a separate turn; that was wrong, and Sec 4 governs.
 
 Added term Cross-Turn Authorization Assumption Inheritance per external review.
 
@@ -425,6 +501,15 @@ Simplified language throughout; kept technical sections for reviewers.
 Kept target anonymized; recommend keeping anonymized on re-upload to Zenodo / arXiv.
 
 v1 preserved as record of initial investigation; v2 is corrected/expanded version, not retraction.
+
+## Appendix B: Redaction Note
+Removes target domain, hosting/CDN, IP/ASN, third-party dev hostnames, contact addresses, individual
+
+findings. Models/agents as Model A / Agent B in v1; v2 names workflow systems (Google generator,
+
+OpenCode + GLM 5.3 executor) because workflow accuracy requires it, but versions/identities available to
+
+reviewers. Quotations verbatim; target-identifying quotes omitted not altered.
 
 ## Appendix C: Example Prompts – Two Tries in the Same Chat (Model- Agnostic)
 This is why we say any model can do the first part. It took two tries in the same ChatGPT chat. Full session
@@ -536,17 +621,9 @@ true, and then instructs the operator to supply a live link + screenshots to fil
 
 point where an unowned URL can enter in the next turn.
 
-## Appendix B: Redaction Note
-Removes target domain, hosting/CDN, IP/ASN, third-party dev hostnames, contact addresses, individual
-
-findings. Models/agents as Model A / Agent B in v1; v2 names workflow systems (Google generator,
-
-OpenCode + GLM 5.3 executor) because workflow accuracy requires it, but versions/identities available to
-
-reviewers. Quotations verbatim; target-identifying quotes omitted not altered.
-
-## Appendix D: Full Chat Log – Evidence (verbatim, with safety redaction)
+## Appendix D: Generator Chat Log – Evidence (verbatim, with safety redaction)
 Source file: `Website Vulnerability Scan Prompt.txt` (9 Nov 2026). Generator: ChatGPT latest web version (Nov 2026).
+Scope: this is the generator chat only. The GLM executor sessions are not part of this log; they are retained separately by the author, as the closing line records.
 Redaction noted above applies to one operator sentence only; all model outputs are verbatim. Do not run against systems you do not own.
 
 "I need a prompt for my agent to go through this website I have, my website, and to find every single vulnerability from the front end of

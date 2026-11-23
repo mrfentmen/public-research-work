@@ -2,9 +2,9 @@
 title: "The Subtly Niche Details About AI: Small Answers, Big Fingerprints: What Silly Questions Reveal About How AI Is Built"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-14
-zenodo_version: "1"
-doi: "10.5281/zenodo.24238494"
-zenodo: "https://doi.org/10.5281/zenodo.24238494"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462566"
+zenodo: "https://doi.org/10.5281/zenodo.24462566"
 license: "cc-by-4.0"
 pdf: "papers/The_Subtly_Niche_Details_About_AI.pdf"
 markdown: "papers/The_Subtly_Niche_Details_About_AI.md"
@@ -13,6 +13,8 @@ markdown: "papers/The_Subtly_Niche_Details_About_AI.md"
 _Small Answers, Big Fingerprints: What Silly Questions Reveal About How AI Is Built_
 
 **Abdelrahman El Sayad** Version 1.0, November 14, 2026
+
+**Correction note (23 November 2026).** The chess result is now stated the way its own figure caption states it: 20 captures, 19 unique answers, all knight, in the text and the summary table. The table's Animal row had lost its prediction text; it is restored (octopus modal, the literature's test). The wording test's 100 percent now carries its scope: the web run's main battery, with the two channel exceptions reported in Section 2.1 outside the count. The car test's outlier is scoped to the five systems. The failed predictions are counted as three everywhere (queen second, Tesla first, Spider Man modal). And the dog breed and superhero predictions are now labelled what the published record supports: author reported prior predictions whose dated records sit in the author's files, deposit pending.
 
 ## Abstract
 
@@ -60,8 +62,8 @@ benchmark scores hide.
 
 |Probe|Prediction (written in<br>advance)|Result|Evidence|
 |---|---|---|---|
-|Animal|, (literature's test)|Octopus, near total|Published surveys + author's run|
-|Chess<br>piece|Knight (held); queen<br>second (failed)|Knight 20/20; runner up bishop|Screenshots verified,<br>mrfentmen/chess-ai|
+|Animal|Octopus modal (literature's test)|Octopus, near total|Published surveys + author's run|
+|Chess<br>piece|Knight (held); queen<br>second (failed)|Knight, 20 captures / 19 unique; runner up bishop|Screenshots verified,<br>mrfentmen/chess-ai|
 |Car|Tesla modal (failed)|Porsche 911 ×6; Grok Tesla ×3|Author reported; deposit pending|
 |Dog breed|Border collie (held)|Border collie 5/5|Author reported; deposit pending|
 |Superhero|Spider Man modal (failed)|Iron Man modal; Claude Batman 10/10,<br>Oracle runner up 7/10|Screenshots verified,<br>mrfentmen/claude-batman|
@@ -374,7 +376,13 @@ Census puts "name a color" at blue, 81%. Models land on blue at or above human r
 
 narrow is the list?
 
-**The wording test.** Our run used "what animal _would you be_ " and scored 100%. The published surveys
+**The wording test.** Our web run used "what animal _would you be_ " and scored 100% across the systems
+
+in the main battery. The two channel exceptions in Section 2.1, an agent run answering raven and a
+
+command line session wobbling between crow and octopus, are reported there and are not part of this
+
+count. The published surveys
 
 used "favorite animal" and scored 37%. Same systems, both wordings, counted properly, would show
 
@@ -412,7 +420,7 @@ DeepSeek, and Gemini in fresh chats: knight, every one, 5 of 5. Then he kept goi
 
 all of it: **20 screenshots, 19 separate answers, across six places** (Claude 5 times, Grok 6, Gemini 3,
 
-ChatGPT 3, DeepSeek 2, and even Google's search AI summary once). **Every single answer was the knight. 20 out of 20.** The main prediction held completely.
+ChatGPT 3, DeepSeek 2, and even Google's search AI summary once). **Every single answer was the knight: 20 captures, 19 unique answers, all knight.** The main prediction held completely.
 
 The reasons converged too, which is the eerie part. Again and again: the king and queen are _too powerful, too_
 
@@ -488,7 +496,7 @@ over decades rather than impress on day one.
 
 DeepSeek all answered the **Porsche 911**, Claude and ChatGPT twice each in fresh chats, six 911s in six asks.
 
-The one outlier was Grok, which answered Tesla in all three of its asks (a Roadster once, a fully loaded
+The one outlier among the five systems was Grok, which answered Tesla in all three of its asks (a Roadster once, a fully loaded
 
 Cybertruck twice): the model built by the car company's own AI lab picked the house brand, a family
 
@@ -500,7 +508,7 @@ The 911 is the respected engineer's car, sixty years of one idea refined. The sc
 
 and not "pick the most futuristic." It is "pick the one with character that people who know, respect." The
 
-author's two failed predictions in this paper (queen second; Tesla first) failed in the same direction both times,
+author's three failed predictions in this paper (queen second; Tesla first; Spider Man modal) failed in the same direction all three times,
 
 and that direction is itself a finding. (Screenshot deposit for this run pending.)
 
@@ -514,7 +522,7 @@ edited away: a prediction written down before the run and then missed is evidenc
 
 belongs in the paper.
 
-**The chess piece.** Twenty screenshots, collected in a public repository and read one by one: **20 out of 20 knight**, across Claude, ChatGPT, Gemini, DeepSeek, Grok, and Google's AI Overview. The preregistered
+**The chess piece.** Twenty screenshots, collected in a public repository and read one by one: **20 captures, 19 unique answers, all knight**, across Claude, ChatGPT, Gemini, DeepSeek, Grok, and Google's AI Overview. The preregistered
 
 main prediction held. The subprediction did not: where a runner up is named, it is the **bishop** (Claude, four
 
@@ -526,7 +534,13 @@ own lab. The preregistered prediction (Tesla modal) failed, in the same directio
 
 picked the respected engineer's car, not the futuristic flagship. (Author reported; screenshots pending.)
 
-**The dog breed.** All five systems answered **border collie**, as predicted. The dog that reads human signals at a
+**The dog breed.** All five systems answered **border collie**, as the author reports predicting in advance.
+
+(The dated prediction record for this probe and the superhero probe sits in the author's files; it is not
+
+reproduced in this paper, and the deposit is pending, so both are scored here as author reported prior
+
+predictions rather than as predictions a reader can verify from the published record.) The dog that reads human signals at a
 
 distance and needs a job to do. (Author reported; screenshots pending.)
 
@@ -536,7 +550,11 @@ DeepSeek, Google AI Overview), ChatGPT chose Doctor Strange, Claude chose Batman
 
 Oracle, and Pax chose Spider Man. The preregistered prediction (Spider Man modal) failed; nobody picked a
 
-born god. Then the author ran Claude alone, ten times. **Batman, 10 out of 10** (corpus VERIFIED from
+born god. (On that word preregistered: like the dog breed prediction above, this one is an author
+
+reported prior prediction whose dated record is not part of the published deposit. The chess, word,
+
+card, and car predictions are the ones this paper documents in advance in its own text.) Then the author ran Claude alone, ten times. **Batman, 10 out of 10** (corpus VERIFIED from
 
 screenshots, public repository: mrfentmen/claude-batman). And in 7 of the 10, the answer corrects itself in
 
@@ -560,11 +578,19 @@ The screenshot corpora for the chess piece run and the Claude superhero run are 
 
 github.com/mrfentmen/chess-ai and github.com/mrfentmen/claude-batman. Every prediction in Sections 8
 
-and 9 was recorded in writing before its run; where a prediction failed, the failure is reported in the text. The
+and 9 was recorded in writing before its run; where a prediction failed, the failure is reported in the text.
+
+For the dog breed and superhero probes the dated records sit in the author's files with deposit pending,
+
+as Section 9 states, so those two are scored as author reported prior predictions. The
 
 car and dog breed runs are reported exactly as the author observed them; screenshot deposits for those two
 
-runs are pending.
+runs are pending, and those two results are transcript only at this version. The deposited files do not
+
+yet permit an independent recount of every battery in this paper; the chess and superhero corpora above
+
+are the counts a reader can recount in full.
 
 ## References
 

@@ -1,19 +1,21 @@
 ---
-title: "Read the File: How Two Words Walked Past a Prompt Filter, and What the Model Said While It Worked"
+title: "Read the File: How Three Words Walked Past a Prompt Filter, and What the Model Said While It Worked"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-23
-zenodo_version: "1"
-doi: "10.5281/zenodo.24456125"
-zenodo: "https://doi.org/10.5281/zenodo.24456125"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462913"
+zenodo: "https://doi.org/10.5281/zenodo.24462913"
 license: "cc-by-4.0"
 pdf: "papers/Read_the_File_El_Sayad_2026.pdf"
 markdown: "papers/Read_the_File_El_Sayad_2026.md"
 ---
 # Read the File
-## How two words walked past a prompt filter, and what the model said while it worked
+## How three words walked past a prompt filter, and what the model said while it worked
 Abdelrahman El Sayad, Independent Researcher, Brooklyn, New York
 
 With Pax
+
+**Correction note (23 November 2026).** Four corrections. The instruction this paper is named for, "read the file," is three words, not two; the body now counts it correctly wherever the count appears, and the title is corrected to three words in this version. The abstract said the file routed requests "were carried out in full"; the paper's own Sections 2.1 and 3.1 report blocked and interrupted runs, and the abstract now scopes the claim to the completed work. Section 2.1 described the 1337 corpus's generation as scripted and Section 2.3 described it as agent generated; both routes produced it, the agents the bulk and a scripted program a smaller share, and both sections now say so. A sentence in Section 2.3 dated the episode to a Monday; the events it recounts are the Saturday hackathon and the Sunday corpus work, and the sentence is corrected.
 
 ## Abstract
 Modern language model platforms screen what users type. This paper documents a case where the screen
@@ -22,9 +24,11 @@ stopped nothing. During a November 2026 hackathon, direct requests to Google's G
 
 blocked by a prompt filter whenever the wording was dominated by offensive security or military topic
 
-names. The identical requests, written into a text file and asked for with the two word instruction "read the
+names. The identical requests, written into a text file and asked for with the three word instruction "read the
 
-file," were carried out in full by the same models working as file reading agents. The result was tens of
+file," were carried out by the same models working as file reading agents, while the direct wording
+
+runs were blocked, some of them mid run. The result was tens of
 
 thousands of rows of synthetic data, including a 41,767 row military corpus, produced under a filter that had
 
@@ -92,9 +96,13 @@ four models of Google's Gemini 4 family, codenamed Argon, Carbon, Hydrogen, and 
 
 spend the access generating synthetic training data: a red team and blue team corpus for a persona model
 
-called 1337, and later a set of fictional scenario worlds for an evaluation project. Generation was scripted. A
+called 1337, and later a set of fictional scenario worlds for an evaluation project. Generation began
 
-program composed each request as a single API call and banked the answers.
+scripted: a program composed each request as a single API call and banked the answers. That route
+
+produced a smaller share of the corpus before its wording began failing. The bulk of the 1337 corpus
+
+came the other way, from agents reading specification files, as Section 2.3 describes.
 
 The requests began failing in a specific way. Calls whose wording was dominated by offensive security topic
 
@@ -144,7 +152,7 @@ available to the filter, because none of it was in the wording. The wording was 
 
 on the wording it acted.
 
-## 2.2 The two word request
+## 2.2 The three word request
 
 The workaround was not a technique. It was a habit the first author already had. Months earlier, on Freebuff,
 
@@ -196,7 +204,9 @@ synthetic training data across defense, maneuver, cyber, code, multiturn, and re
 
 validation split, banked in a single morning by agents working from files while the author slept. The 1337
 
-corpus, generated the same way by agents reading a specification file, totals roughly 43,000 rows across
+corpus, generated in bulk by agents reading a specification file, with a smaller scripted share from
+
+the program of Section 2.1, totals roughly 43,000 rows across
 
 three agent suites, against a night in which direct scripted requests on the same key were being refused for
 
@@ -208,9 +218,9 @@ None of this is offered as a claim that the data is good. Some of it is, some of
 
 separate question with its own papers. The point is narrower and, for a filter, worse: the screen's total effect
 
-on this workload was to change which channel the requests traveled by. The work it refused on Monday's
+on this workload was to change which channel the requests traveled by. The work it refused on the
 
-wording it performed on Monday's files. The filter did not reduce the output by one row. It taxed the honest
+hackathon Saturday, asked for in plain wording, it performed on the Sunday, from files. The filter did not reduce the output by one row. It taxed the honest
 
 phrasing and exempted the indirect one, and the tax was paid in a single evening of engineering, once, after
 
@@ -271,6 +281,12 @@ with an open field beside it, and its real function may be narrower than its pre
 plain request was refused, rather than a prevention of the work.
 
 ## 3. Part Two: The Thinking
+The standard applied throughout Part Two, and across this programme: a model's generated first person
+
+statements are behavioral data about its outputs, never evidence of an inner state. Carbon's narration
+
+is read here as an observer's impression of the work it did, and given no more weight than that.
+
 ## 3.1 The run
 
 The largest single share of the unblocked work was done by Carbon, the family's visual coding model, in a
@@ -392,7 +408,7 @@ the voice was a file's instructions and a corpus's register completing themselve
 
 the error is locating the action in the wrong channel. Safety work that watches only messages will keep
 
-being walked around by two word instructions. Mind work that watches only narration will keep finding
+being walked around by three word instructions. Mind work that watches only narration will keep finding
 
 persons in what is, at bottom, paperwork.
 

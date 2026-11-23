@@ -2,9 +2,9 @@
 title: "The Cache Is the Wall: KV Cache, Not Weights, Is What Keeps Frontier Models Off Small Hardware"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-23
-zenodo_version: "1"
-doi: "10.5281/zenodo.24457106"
-zenodo: "https://doi.org/10.5281/zenodo.24457106"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462968"
+zenodo: "https://doi.org/10.5281/zenodo.24462968"
 license: "cc-by-4.0"
 pdf: "papers/The_Cache_Is_the_Wall_El_Sayad_2026.pdf"
 markdown: "papers/The_Cache_Is_the_Wall_El_Sayad_2026.md"
@@ -15,6 +15,8 @@ markdown: "papers/The_Cache_Is_the_Wall_El_Sayad_2026.md"
 November 2026
 
 *Companion to "Time Is the Bottleneck."*
+
+**Correction note, version 2 (November 2026).** The first version's conclusion stated that a 32 GB MacBook can hold a frontier model's body. It cannot, on this paper's own numbers: a 70B class model's weights alone exceed the machine before any cache is stored. The abstract and conclusion are corrected to say so. Section 4 now applies the cache reductions the paper cites to the paper's own table, and one derivation label in Section 1 is corrected. No computed figure in Section 2 changes.
 
 --
 ## Abstract
@@ -28,11 +30,11 @@ for every token of context, is dynamic, grows linearly with context length and w
 
 resists aggressive compression, and is the quantity that actually exhausts memory on small machines. On a
 
-32 GB laptop, a quantized frontier class model can fit its weights with room to spare and still fail, because
+32 GB laptop, a frontier class model's weights do not fit at all, and the models whose weights do fit still
 
-the cache for a long context, or for the long reasoning chains that increasingly *define* frontier capability,
+fail at frontier use, because the cache for a long context, or for the long reasoning chains that increasingly
 
-does not fit in what remains. We compute cache sizes from published architectures, show why each current
+*define* frontier capability, does not fit in what remains. We compute cache sizes from published architectures, show why each current
 
 mitigation (grouped query attention, cache quantization, sliding windows, paged memory management)
 
@@ -49,9 +51,11 @@ matter how small the weights get.
 
 model at 4 bit quantization occupies roughly 35 to 40 GB in naive terms and ~40 GB is already too much,
 
-but drop to a 32B model at 4 bit (~19 GB) and the weights fit comfortably on a 32 GB machine (computed
+but drop to a 32B model at 4 bit (~19 GB as shipped, of which the weights alone are 16 GB by parameter
 
-from parameter counts). Demos run. Screenshots are posted.
+count, the rest format overhead) and the weights fit comfortably on a 32 GB machine. Demos run.
+
+Screenshots are posted.
 
 Then the user does real work: a long document, a long conversation, a long reasoning trace, and the machine
 
@@ -189,8 +193,28 @@ long context tasks while hybrids close the gap, and no controlled MLA vs attenti
 
 the match is contested, not settled).
 
+**4.6 The reductions, applied to this paper's own table.** Take the mitigations at their strongest and run
+
+them against Section 2's numbers. Cache quantization at 4 bit takes the 70B's 128k cache from ~43 GB to
+
+~11 GB, and at 2 bit to ~5.4 GB. Neither admits the model to a 32 GB machine, because its weights at 4 bit
+
+are ~40 GB: the cache could be free and the body still would not fit. For the 8B the same arithmetic cuts
+
+the other way, and this paper concedes it: 4 bit cache quantization takes its 128k cache from ~17 GB to
+
+~4.3 GB, and that machine works. The wall moves for small models. It does not move for frontier class
+
+models, where the binding order is weights first, cache second, both over the line. Multi-head Latent
+
+Attention's reported 93.3% cut would take a 70B scale cache to ~2.9 GB, but MLA is not a setting applied
+
+to an existing model; it is a different architecture. That is Section 5's point: the reductions that would
+
+settle the question are the redesigns.
+
 ## 5. The claim, precisely
-1. On small hardware (≤32 GB), for frontier class models, **KV cache, not weights, is the first binding memory constraint** at the context lengths and reasoning lengths that define frontier use.
+1. On small hardware (≤32 GB), **KV cache, not weights, is the first binding memory constraint** for every model whose weights can be made to fit, at the context lengths and reasoning lengths that define frontier use. For frontier class models proper, the weights alone already exceed the machine, and the cache exceeds it again; nothing about them runs on 32 GB, and Section 4.6 shows the current reductions do not change that.
 
 2. All widely deployed mitigations are constant factor or capability surrendering; the growth law (linear
 
@@ -226,13 +250,19 @@ scarce at once.
 ## 7. Conclusion
 The weights were never the wall; they were the part of the wall we knew how to shrink. The KV cache is the
 
-part that grows, with context, with reasoning, with agents, with ambition itself. A 32 GB MacBook can hold
+part that grows, with context, with reasoning, with agents, with ambition itself. A 32 GB MacBook cannot
 
-a frontier model's body today. It cannot hold its memory of the conversation. Until the cache is solved,
+hold a frontier model at all: not its memory of the conversation, and not even its body, which exceeds the
 
-compressed without amnesia, or replaced without loss, frontier AI stays in the datacenter, and local AI stays
+machine before the first token is stored. Frontier AI stays in the datacenter because the datacenter is
 
-a demo with a context window it cannot afford to use.
+where the memory is. What the laptop can hold is a smaller model, and there the cache is the wall in its
+
+purest form, a model of 4 to 5 GB of weights that needs ~17 GB to remember its own context. Until the
+
+cache is solved, compressed without amnesia, or replaced without loss, local AI stays a demo with a
+
+context window it cannot afford to use.
 
 --
 ## References

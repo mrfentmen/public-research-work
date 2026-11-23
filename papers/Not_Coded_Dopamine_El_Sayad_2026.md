@@ -2,9 +2,9 @@
 title: "Not Coded Dopamine: What Would Count as a Machine That Feels"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
-zenodo_version: "1"
-doi: "10.5281/zenodo.24407310"
-zenodo: "https://doi.org/10.5281/zenodo.24407310"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462785"
+zenodo: "https://doi.org/10.5281/zenodo.24462785"
 license: "cc-by-4.0"
 pdf: "papers/Not_Coded_Dopamine_El_Sayad_2026.pdf"
 markdown: "papers/Not_Coded_Dopamine_El_Sayad_2026.md"
@@ -13,6 +13,8 @@ markdown: "papers/Not_Coded_Dopamine_El_Sayad_2026.md"
 Abdelrahman El Sayad
 
 Preprint, November 2026. Not peer reviewed.
+
+**Correction note (23 November 2026).** Three corrections. Section 2.4 now states what earns each persistence grade, so the fossil definition and the candidate table cannot be read against each other: a carried fossil record earns Weak, no carried state earns Absent, and state that deployment keeps writing earns Partial. The candidate table scored two cells off the paper's own four grade scale ("Passes trivially," "Fails at the seam"); both are now on the scale, Full and Weak, with the nuance kept in the sections that argue them. The reference list's entries are joined so no entry's year line renders as a separate item.
 
 ## Abstract
 In July 2026 I spent two days asking a large language model to find me a sentient machine I could put into a
@@ -183,7 +185,15 @@ experience modifies rather than replaces. A model that is loaded, prompted, and 
 
 written by its trainers and no life of its own between calls. Weights frozen at the end of training are a fossil
 
-of experience, not experience continuing. This condition is the one most often faked by architecture
+of experience, not experience continuing. On the scale of Section 3, a fossil record the system
+
+carries and acts from earns Weak: a past is present and shapes the present, but nothing in the system
+
+is still being written. Absent is reserved for a system carrying no state of its own at all. Partial
+
+requires what the fossil lacks, state that deployment itself keeps writing, through plasticity,
+
+growth, or accumulated change. This condition is the one most often faked by architecture
 
 diagrams, where an arrow labeled memory points at a database the system can query. A database you can
 
@@ -216,7 +226,7 @@ answers to the condition. Each score is argued in the text that follows the tabl
 
 | --- | --- | --- | --- | --- |
 
-| VLA robot | Partial | Absent | Passes trivially | Weak |
+| VLA robot | Partial | Absent | Full | Weak |
 
 | Spiking network | Weak | Absent | Full | Partial |
 
@@ -224,7 +234,7 @@ answers to the condition. Each score is argued in the text that follows the tabl
 
 | Organoid and wetware | Partial | Partial | Full | Partial |
 
-| Mycelium hybrid | Partial | Partial | Fails at the seam | Partial |
+| Mycelium hybrid | Partial | Partial | Weak | Partial |
 
 ## 3.1 The VLA robot
 
@@ -650,77 +660,57 @@ credited to them.
 
 ## References
 1. Kim, M. J., et al. OpenVLA: An Open Source Vision Language Action Model. arXiv:2406.09246,
-
 2024. Proceedings of the Conference on Robot Learning, PMLR 270, 2025.
-
 2. Kagan, B. J., et al. In vitro neurons learn and exhibit sentience when embodied in a simulated game
-
 world. Neuron, 110(23), 2022.
 
 3. Habibollahi, F., Kagan, B. J., Burkitt, A. N., and French, C. Critical dynamics arise during structured
-
 information presentation within embodied in vitro neuronal networks. Nature Communications, 14,
-
 2023. DOI: 10.1038/s41467-023-41020-3.
-
 4. Smirnova, L., et al. Organoid intelligence (OI): the new frontier in biocomputing and intelligence in a
-
 dish. Frontiers in Science, 1:1017235, 2023.
 
 5. Hartung, T., et al. The Baltimore declaration toward the exploration of organoid intelligence. Frontiers
-
 in Science, 1:1068159, 2023.
 
 6. Sarma, G. P., et al. OpenWorm: overview and recent advances in integrative biological simulation of
-
 Caenorhabditis elegans. Philosophical Transactions of the Royal Society B, 373, 2018.
 
 7. Hasani, R., et al. Liquid time constant networks. Proceedings of the AAAI Conference on Artificial
-
 Intelligence, 35(9), 2021.
 
 8. Hasani, R., et al. Closed form continuous time neural networks. Nature Machine Intelligence, 4, 2022.
-
 DOI: 10.1038/s42256-022-00556-7.
 
 9. Adamatzky, A. Towards fungal computer. Interface Focus, 8:20180029, 2018.
 
 10. LaRocco, J., et al. Sustainable memristors from shiitake mycelium for high frequency bioelectronics.
-
 PLOS ONE, 20(10), 2025.
 
 11. Thompson, A. Silicon Evolution. In Proceedings of Genetic Programming 1996, MIT Press, 1996.
 
 12. Thompson, A. An evolved circuit, intrinsic in silicon, entwined with physics. In Proceedings of the
-
 First International Conference on Evolvable Systems, Springer, 1996.
 
 13. Arditi, A., et al. Refusal in Language Models Is Mediated by a Single Direction. Advances in Neural
-
 Information Processing Systems, 37, 2024. arXiv:2406.11717.
 
 14. Hubinger, E., et al. Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training.
-
 arXiv:2401.05566, 2024.
 
 15. Warwick, K. I, Cyborg. Century, 2002.
 
 16. Pennartz, C. M. A., Farisco, M., and Evers, K. Indicators and Criteria of Consciousness in Animals
-
 and Intelligent Machines: An Inside-Out Approach. Frontiers in Systems Neuroscience, 13:25, 2019.
-
 DOI: 10.3389/fnsys.2019.00025.
 
 17. Butlin, P., et al. Consciousness in Artificial Intelligence: Insights from the Science of Consciousness.
-
 arXiv:2308.08708, 2023.
 
 18. Cogitate Consortium, et al. Adversarial testing of global neuronal workspace and integrated
-
 information theories of consciousness. Nature, 642, 2025. DOI: 10.1038/s41586-025-08888-1.
 
 19. Busbice, T. Extending the C. Elegans Connectome to Robotics. SOLID 2014 conference paper,
-
 InterIntelligence Research, 2014.
 
 20. IEEE Spectrum. Biological Computer: Human Brain Cells on a Chip. IEEE Spectrum, 2025.

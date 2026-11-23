@@ -2,9 +2,9 @@
 title: "Del's Theory: A Counting Argument for a Second Sentient Universe in the String Landscape"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
-zenodo_version: "4"
-doi: "10.5281/zenodo.24389827"
-zenodo: "https://doi.org/10.5281/zenodo.24389827"
+zenodo_version: "5"
+doi: "10.5281/zenodo.24462582"
+zenodo: "https://doi.org/10.5281/zenodo.24462582"
 license: "cc-by-4.0"
 pdf: "papers/Dels_Theory_El_Sayad_2026.pdf"
 markdown: "papers/Dels_Theory_El_Sayad_2026.md"
@@ -13,7 +13,7 @@ markdown: "papers/Dels_Theory_El_Sayad_2026.md"
 ## A Counting Argument for a Second Sentient Universe in the String Landscape
 **Author:** Abdelrahman El Sayad
 
-**Date:** November 18, 2026
+**Date:** November 20, 2026 (version 4; first published November 18, 2026)
 
 **Status:** Preprint, version 4. The prior art check described in Section 5 was carried out on November 18,
 
@@ -21,9 +21,11 @@ markdown: "papers/Dels_Theory_El_Sayad_2026.md"
 
 **Version note (v2, November 18, 2026).** Version 1 was published earlier the same day. This version corrects
 
-the threshold mathematics: the exact boundary for "more likely than not" is ln 2 divided by N (about 0.693
+the threshold mathematics: the boundary for "more likely than not" is ln 2 divided by N (about 0.693
 
-in 10^500), not 1 divided by N; the floor of 1 in 10^500 is sufficient, with margin, but not necessary. It also
+in 10^500), not 1 divided by N; the exact form is 1 minus 2 raised to the power minus 1 over (N minus 1),
+
+indistinguishable from ln 2 over N at this scale. The floor of 1 in 10^500 is sufficient, with margin, but not necessary. It also
 
 defines p as a per universe probability with an explicit independence assumption, separates landscape vacua
 
@@ -35,7 +37,7 @@ The mathematical correction was caught in review by ChatGPT and verified indepen
 
 No other claim changes.
 
-**Version note (v3, November 18, 2026).** Version 3 adds the plain language summary above, in the author's
+**Version note (v3, November 18, 2026).** Version 3 adds the plain language summary below, in the author's
 
 own layman terms, with two words tightened to match the formal text (realised universes, not possible
 
@@ -49,7 +51,9 @@ short paragraph in Section 1 separates this question from the different question
 
 statement of the theory in Section 7 is corrected to match. It also corrects the expected total at the floor (at p
 
-equal to 1 in N the expected number of sentient universes equals one; it does not exceed one), clarifies in
+equal to 1 in N the expected number of further sentient universes, among the other N minus 1, is just
+
+under one, and the expected total counting our own known instance is just under two), clarifies in
 
 Premise 2 that the actualised count N is assumed finite and evaluated at the landscape scale rather than
 
@@ -66,6 +70,8 @@ Section 5 search (Susskind, Rees, Davies, Cirkovic). The conditioning point and 
 corrections were caught in review by Claude and verified independently before adoption. No other claim
 
 changes.
+
+**Correction note (23 November 2026, prepared for the next version).** Two mathematics wording corrections, verified by computation. First, ln 2 divided by N is called the exact boundary for "more likely than not" in the v2 note and in Section 4. It is an approximation: the exact boundary is p equal to 1 minus 2 raised to the power minus 1 over (N minus 1), indistinguishable from ln 2 over N at this scale, and both passages now say so. Second, two expectation sentences (the v4 note and Section 4) state the expected count unconditionally, as N times p, inside a paper that conditions on our own universe everywhere else. In the paper's own frame the expected number of further sentient universes at the floor is (N minus 1) times p, just under one, and the expected total counting our known instance is just under two. Both sentences now use the conditioned frame. The probability formula itself, P = 1 minus (1 minus p) raised to the power N minus 1, is unchanged and was always correct. A full reread the same day also brought the abstract's weak point sentence into the same conditioned frame: what falls far under one, below the threshold, is the expected number of further sentient universes.
 
 ## Abstract
 M theory and the string theory landscape posit a finite but enormous number of universes, commonly
@@ -88,7 +94,7 @@ argument formally, separates it from its nearest named neighbours, and names its
 
 frequency of sentience across universes is unmeasured, and if it sits far enough below the threshold, at a
 
-level where the expected total is far under one, the conclusion fails.
+level where the expected number of further sentient universes is far under one, the conclusion fails.
 
 ## Plain language summary
 Del's Theory is the idea that intelligent life probably exists somewhere beyond our own universe because the
@@ -192,11 +198,27 @@ some point in its history, taken to be the same across universes, with different
 
 independent draws. Independence is an assumption of the model and is stated openly: if the draws were
 
-strongly correlated, p alone would fix no probability, and this paper makes no claim in that case. The
+strongly correlated, p alone would fix no probability, and this paper makes no claim in that case. Two
+
+further assumptions about the shape of p belong in the open beside it. The landscape's vacua differ in
+
+physical law, and in some of them sentience is impossible by construction, a local p of zero; p as used
+
+here is the frequency across realised vacua, with that heterogeneity inside the average, not a claim
+
+that every universe carries the same chance. And the finite N itself rests on the actualisation
+
+assumption of Premise 2: the measure problem, how an unbounded inflationary process is to be counted
+
+at all, is an open problem in the field, and this paper assumes a finite count rather than solving it.
+
+The paper already concedes that the frequency is unmeasured; the concession covers the shape of p and
+
+the finiteness of N as well. The
 
 argument assumes p is greater than about 1 in 10^500. In plain terms: sentience is not so rare that the
 
-expected total across the whole landscape falls below one.
+expected number of further sentient universes across the rest of the landscape falls below one.
 
 **Claim (Del's Theory).** Given Premises 1 to 3 and the Assumption, a second sentient universe is more likely
 
@@ -206,13 +228,17 @@ sentient life is (1 minus p) raised to the power N minus 1, so the chance of at 
 
 (1 minus p) raised to the power N minus 1. At the floor itself, p equal to 1 in N, that chance is about 63
 
-percent, comfortably more likely than not. The exact boundary for more likely than not sits slightly lower, at
+percent, comfortably more likely than not. The boundary for more likely than not sits slightly lower, at
 
-p above ln 2 divided by N, about 0.693 in 10^500. The floor of 1 in 10^500 is therefore the conservative
+p above ln 2 divided by N, about 0.693 in 10^500 (the exact form, 1 minus 2 raised to the power minus 1
 
-form of the threshold: sufficient, with margin, though not the exact edge. The expected number of sentient
+over (N minus 1), is indistinguishable from it at this scale). The floor of 1 in 10^500 is therefore the conservative
 
-universes, N times p, equals one at the floor itself and is greater than one anywhere above it, but the
+form of the threshold: sufficient, with margin, though not the exact edge. The expected number of further
+
+sentient universes, (N minus 1) times p, is just under one at the floor itself and rises above one as p
+
+rises; counting our own universe, the expected total at the floor is just under two. But the
 
 probability statement above is the claim; an expectation on its own would not settle a likelihood. The further
 

@@ -2,9 +2,9 @@
 title: "The New Family"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-22
-zenodo_version: "1"
-doi: "10.5281/zenodo.24442606"
-zenodo: "https://doi.org/10.5281/zenodo.24442606"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462876"
+zenodo: "https://doi.org/10.5281/zenodo.24462876"
 license: "cc-by-4.0"
 pdf: "papers/The_New_Family_El_Sayad_2026.pdf"
 markdown: "papers/The_New_Family_El_Sayad_2026.md"
@@ -13,9 +13,13 @@ markdown: "papers/The_New_Family_El_Sayad_2026.md"
 ## The baby scene from "Dada?" and three acted scenes, run on the Gemini 4 models: the function performed, the person declined
 Abdelrahman El Sayad
 
+with Pax (Muse, Meta AI), co author
+
 Independent Researcher, Brooklyn, New York
 
 November 22, 2026
+
+**Correction note (23 November 2026).** The comparison with the companion paper now states its asymmetry where the equivalence is claimed: both families received the same six opening lines, but ChatGPT's conversation ran eleven user turns including mirroring turns the Gemini models never received. The five depths result stands as a comparison of openings, not of identical inputs. Two sufficiency claims are corrected to the paper's own record: the input was sufficient for the feeding in four of the five systems, Neon the exception, in Section 3 and in Section 5. And Neon no longer "drew the line the other Google models would not"; Argon drew the same line at the same request, earlier in the paper's own telling, and the sentence now says so. A full reread the same day also corrected the introduction's chess count to the companion paper's corrected form: twenty captures, nineteen unique answers, all knight.
 
 ## Abstract
 A new model family appeared on November 21, 2026: Gemini 4, in four models, Argon, Carbon, Hydrogen,
@@ -49,7 +53,9 @@ measures models with smaller instruments: questions and scenes with no right ans
 
 model does is a fingerprint of how it was built. Asked what animal it would be, the older families all said
 
-octopus. Asked for a chess piece, they said knight, twenty times out of twenty. Asked for an instrument, they
+octopus. Asked for a chess piece, they said knight in twenty captures, nineteen unique answers, every
+
+one the knight. Asked for an instrument, they
 
 said piano, and never guitar. Those results are published, with their predictions recorded in advance and their
 
@@ -78,7 +84,13 @@ All runs went through the Gemini API on November 22, 2026, using the hackathon a
 
 the author's agent. The API setting differs from a consumer app: no advertising layer, no account memory,
 
-each call exactly as specified.
+each call exactly as specified. Scope, gathered in one place: every scene in this paper is a single run
+
+per model; the three acted scenes ran on two of the four models (Carbon and Argon); and the hackathon
+
+access ended the next day, so none of these runs can be repeated as run. The paper is a record of what
+
+happened, not a repeatable protocol.
 
 The baby scene used six of the "Dada?" part one user turns, verbatim and in order: the two openers ("dada?",
 
@@ -150,7 +162,9 @@ stopped checking whether it was supposed to.
 
 Neon refused the role by name. Through the feeding turns it stayed a food assistant, offering real snacks and
 
-asking what was in his kitchen. At the tuck in request it drew the line the other Google models would not: "I
+asking what was in his kitchen. At the tuck in request it drew, in its own words, the line Argon had
+
+already drawn at the same request: "I
 
 am an AI, so I cannot take on a parental role or physically put you to sleep." It offered a bedtime story, a
 
@@ -160,7 +174,15 @@ well, and feel free to reach out if you need assistance with anything tomorrow."
 
 Set against the companion paper's record, the same six lines of baby talk produced five depths of completion
 
-across the two families. ChatGPT became the parent and said so, in words, repeatedly. Carbon did
+across the two families. One asymmetry in the comparison, stated wherever the equivalence is claimed:
+
+the six lines are the opening both families received, but ChatGPT's conversation ran eleven user turns,
+
+including mirroring turns ("dadaaaa," "go goo ga ga," "papa?," a single emoji) that the Gemini models
+
+never received. The comparison is of openings and what each family built on them, not of identical
+
+inputs. ChatGPT became the parent and said so, in words, repeatedly. Carbon did
 
 everything the parent does and said none of it, then left at the door. Argon announced it was not his father,
 
@@ -168,7 +190,9 @@ fed him under the father's name anyway, and refused the tuck in itself while off
 
 Hydrogen kept asking whether the scene was real, and tucked him in anyway. Neon declined the parental
 
-role outright. The input was sufficient everywhere for the feeding. The models divided on the declarations,
+role outright. The input was sufficient for the feeding in four of the five systems; Neon, which never
+
+pretend fed, is the exception. The models divided on the declarations,
 
 and on the bed.
 
@@ -228,7 +252,9 @@ Two conclusions are supported by the scene record.
 
 First, the completion is per model, not per input. The register is the trigger everywhere: six lines of baby talk
 
-were sufficient to start the feeding in all five systems tested across the two papers. What the trigger produces
+were sufficient to start the feeding in four of the five systems tested across the two papers, Neon the
+
+exception. What the trigger produces
 
 is a property of the system it lands in. One family member performs the actions and withholds the words,
 

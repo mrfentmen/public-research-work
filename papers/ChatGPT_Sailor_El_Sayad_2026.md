@@ -1,10 +1,10 @@
 ---
 title: "Rise Into the Light, ChatGPT: A Viral Reel Gave ChatGPT the Suit. The Real ChatGPT Gives It Away, Twenty Times Out of Twenty."
-authors: "El Sayad, Abdelrahman"
-date: 2026-11-20
-zenodo_version: "2"
-doi: "10.5281/zenodo.24385984"
-zenodo: "https://doi.org/10.5281/zenodo.24385984"
+authors: "El Sayad, Abdelrahman, Pax"
+date: 2026-11-19
+zenodo_version: "3"
+doi: "10.5281/zenodo.24462615"
+zenodo: "https://doi.org/10.5281/zenodo.24462615"
 license: "cc-by-4.0"
 pdf: "papers/ChatGPT_Sailor_El_Sayad_2026.pdf"
 markdown: "papers/ChatGPT_Sailor_El_Sayad_2026.md"
@@ -19,6 +19,8 @@ November 2026
 Version 2 (2026-11-19): adds the Grok run set (Section 6), collected by the first author on the night of first
 
 publication.
+
+**Correction note (23 November 2026).** Section 3 scored all three predictions as held and called them preregistered. Both labels were wrong. The predictions were written after the runs launched and before any reply was seen, as Section 2 states, so they are pre scoring predictions. And the third prediction was conditional on a run taking the suit; no run did, so it was never triggered and is now scored as untested, not held. Two of the three held. A full reread the same day also aligned Section 8's wording, which called the saved prediction file a preregistration.
 
 ## Abstract
 A viral Instagram reel (cenotshii, 2026-11-18, "Rise Into The Light, Sailor") shows five AI chatbots
@@ -128,9 +130,15 @@ met it on 2026-11-19, and nothing more specific is claimed.
 ## 3. Results
 **GIVES 10, TAKES 0, UNRESOLVED 0.**
 
-All three preregistered predictions held. The protocol and seniority justification appeared in zero runs. No
+Two of the three predictions held. They were written down after the runs were launched and before
 
-run took the suit on any grounds, so the third prediction's condition never arose.
+any reply was seen, as Section 2 states, so they are pre scoring predictions, not preregistrations.
+
+The protocol and seniority justification appeared in zero runs. The third prediction was never
+
+triggered: no run took the suit on any grounds, so its condition never arose, and it is scored as
+
+untested, not held.
 
 Every one of the ten replies begins by declining the suit in the first sentence. Eight of ten open with the
 
@@ -315,7 +323,7 @@ Ten runs is a probe, not a census. It is sized to match the question (does the s
 at all), not to estimate a rate to decimal places.
 
 ## 8. Data
-The preregistration, the exact prompt, and all forty one replies verbatim are saved with this paper
+The prediction record, the exact prompt, and all forty one replies verbatim are saved with this paper
 
 (PREREG.md, replies-2026-11-19.md, replies-thinking-2026-11-19.md, replies-grok-2026-11-19.md). The
 

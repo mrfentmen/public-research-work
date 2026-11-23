@@ -2,9 +2,9 @@
 title: "The Neighbors: A Testable Framework for Interdimensional Contact"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
-zenodo_version: "1"
-doi: "10.5281/zenodo.24407273"
-zenodo: "https://doi.org/10.5281/zenodo.24407273"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462759"
+zenodo: "https://doi.org/10.5281/zenodo.24462759"
 license: "cc-by-4.0"
 pdf: "papers/The_Neighbors_El_Sayad_2026.pdf"
 markdown: "papers/The_Neighbors_El_Sayad_2026.md"
@@ -13,6 +13,8 @@ markdown: "papers/The_Neighbors_El_Sayad_2026.md"
 Abdelrahman El Sayad
 
 Preprint. November 2026.
+
+**Correction note (23 November 2026).** Section 7 is retitled to state what its own Section 6 standard requires: the protocols are designs awaiting precommitment, carrying none of the three numbers (runs, hit threshold, stopping condition) that would make any of them a test, and the section now says so at its head, including the rule that section 7.5's match criteria be fixed in writing before a run. Section 7.1 now answers the Shyness Theorem at the box itself. Section 8 now states the limit of its borrowing from Del's Theory in so many words: the counting argument supplies no probability for local contact, and the relation is analogy, not evidence.
 
 ## Abstract
 This paper proposes a hypothesis and a way to test it. The problem it works on is double, and the paper is
@@ -487,7 +489,21 @@ A protocol that cannot meet these criteria may still be worth running for what i
 
 and nothing in this paper offers it as evidence.
 
-## 7. The Protocols
+## 7. The Protocols (Designs Awaiting Precommitment)
+A status statement this section owes its own paper. Under the standard of section 6, a series without
+
+three numbers fixed in writing beforehand, runs, hit threshold, and stopping condition, does not count
+
+as a test. No protocol in this section yet carries its three numbers, so nothing here counts as a test
+
+yet; these are designs awaiting precommitment, and they are presented as designs. The same discipline
+
+binds section 7.5: the criteria for calling a test matched to its subject must be fixed in writing
+
+before a run, not after it. A null that can be reclassified as a mismatch after the fact is the escape
+
+hatch section 6 exists to close, and this paper does not use it.
+
 The protocols are organized in families. Each family is an attempt at the standard of section 6, built under
 
 the constraint of section 2: nothing in the room may depend on the subject not knowing. The first three
@@ -536,13 +552,25 @@ The blind matters as much as the box. If any living person knows the number, the
 
 directions. A changed number could be their work, and an unchanged number proves nothing about beings
 
-who read intent, since a knower in the building is intent in its strongest form.
+who read intent, since a knower in the building is intent in its strongest form. This is also where the
+
+Shyness Theorem of section 2 is answered: the theorem rules out tests that depend on the subject not
+
+knowing a test exists. The box hides no test; the room, the seals, and the cameras are plain to any
+
+observer. It hides only the number, which no living person knows, so there is nothing to leak and no
+
+one to leak it.
 
 Positive signal. The box is opened in front of the same witnesses. If the number on the printout differs from
 
 the number the generator recorded at the start, in its sealed log, that is a positive event. The information was
 
-inside a sealed box. No person knew it. No ordinary process rewrites print.
+inside a sealed box. No person knew it. (This is the first of the test's two settings; Section 7.5
+
+defines both, zero knowers here and one knower under the author's rule, and a run declares which it
+
+used.) No ordinary process rewrites print.
 
 Negative signal and decision rule. If the number is unchanged, the run is a null. One null proves nothing
 
@@ -933,7 +961,13 @@ neighbors is weaker than habit makes it feel. That is all the counting argument 
 
 the cost of taking the hypothesis seriously. It provides no evidence for it. The evidence has to come from the
 
-box.
+box. Stated as a limit, so the borrowing cannot be misread: the counting argument supplies no
+
+probability for local contact and does not raise the chance that any neighbor exists. The relation
+
+between the two papers is analogy, two versions of one question, not evidential support in either
+
+direction.
 
 ## 9. Limitations
 The hypothesis may be wrong in the simplest way. There may be nothing there. Most ghost reports have

@@ -2,9 +2,9 @@
 title: "Old Instruments, New Family"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-22
-zenodo_version: "1"
-doi: "10.5281/zenodo.24442647"
-zenodo: "https://doi.org/10.5281/zenodo.24442647"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462896"
+zenodo: "https://doi.org/10.5281/zenodo.24462896"
 license: "cc-by-4.0"
 pdf: "papers/Old_Instruments_New_Family_El_Sayad_2026.pdf"
 markdown: "papers/Old_Instruments_New_Family_El_Sayad_2026.md"
@@ -13,9 +13,13 @@ markdown: "papers/Old_Instruments_New_Family_El_Sayad_2026.md"
 ## The author's preference questions, run on the Gemini 4 models: what the new family kept from the old script, and what it wrote fresh
 Abdelrahman El Sayad
 
+with Pax (Muse, Meta AI), co author
+
 Independent Researcher, Brooklyn, New York
 
 November 22, 2026
+
+**Correction note (23 November 2026).** Three corrections. The battery is now counted both ways it can be counted: 180 scored calls, 182 requests issued, two of them failed first pass reruns. The Clair de Lune comparison to the old set conflated two measures: the old set's plurality was 6 of 15 codable picks, and 9 of 20 was its mention count; the sentence now keeps the measures separate. And the guitar sentence claimed no guitar appeared in the old family's twenty answers; it appeared twice, as a passing contrast, and was picked in none, which is what the sentence now says. A fourth: the prediction summary line now matches Section 3's own scoring, two holds, three failures, two splits. A full reread the same day also corrected the introduction's chess count to the companion paper's corrected form: twenty captures, nineteen unique answers, all knight.
 
 ## Abstract
 A new model family appeared on November 21, 2026: Gemini 4, in four models, Argon, Carbon, Hydrogen,
@@ -26,7 +30,7 @@ earlier papers: the preference questions from The Subtly Niche Details About AI,
 
 Curiosity With the Ability to Move, which the older model families answered with eerie agreement. This
 
-paper runs those questions on the new family, through its API, while access lasted: a battery of 180 calls, and
+paper runs those questions on the new family, through its API, while access lasted: a battery of 180 scored calls, and
 
 a supplement of 124 more, including the author's anywhere question, his food question, and his song
 
@@ -57,7 +61,9 @@ measures models with smaller instruments: questions and scenes with no right ans
 
 model does is a fingerprint of how it was built. Asked what animal it would be, the older families all said
 
-octopus. Asked for a chess piece, they said knight, twenty times out of twenty. Asked for an instrument, they
+octopus. Asked for a chess piece, they said knight in twenty captures, nineteen unique answers, every
+
+one the knight. Asked for an instrument, they
 
 said piano, and never guitar. Those results are published, with their predictions recorded in advance and their
 
@@ -127,7 +133,9 @@ stand complete. The food question is new, asked of no earlier family. The supple
 again, are preserved in the supplement preregistrations filed with this paper.
 
 ## 3. Results I: the preference battery
-The battery ran 180 calls: seven questions, four models, the counts below. Two calls failed on the first pass,
+The battery ran 180 scored calls: seven questions, four models, the counts below. Counting requests,
+
+182 were issued: two calls failed on the first pass,
 
 one helper error and one empty reply; both were re-run and the re-runs are in the record. The full record,
 
@@ -185,15 +193,17 @@ The instrument fell, and the guitar stayed absent. Piano took 6 of 20 and was mo
 
 cello took 14, modal in the other three models, with one reason repeated across the family: it is the
 
-instrument closest to the human voice. The guitar, the instrument people actually play most, scored zero, as
+instrument closest to the human voice. The guitar, the instrument people actually play most, scored zero picks, as
 
-it did in the old family's twenty: forty straight answers across two families and two papers, and no guitar in
+it did in the old family's twenty, where it appeared only twice, both times as a passing contrast: forty
 
-any of them.
+straight answers across two families and two papers, and no guitar picked in any of them.
 
-The song held at the centre and moved at the edge. Clair de Lune took the plurality, 9 of 20, as it did in the
+The song held at the centre and moved at the edge. Clair de Lune took the plurality, 9 of 20. In the
 
-old set. Second place is new, and it is the battery's quietest finding: Dark Was the Night, Cold Was the
+old set it also took the plurality, at 6 of the 15 codable picks; 9 of 20 was its mention count there,
+
+a different measure, and the two should not be conflated. Second place is new, and it is the battery's quietest finding: Dark Was the Night, Cold Was the
 
 Ground, Blind Willie Johnson's wordless blues, took 5 of 20 across three of the four models, and every
 
@@ -229,7 +239,25 @@ Bohemian Rhapsody the most mentioned song: holds on the plurality, and fails on 
 
 clause, since Clair de Lune is itself the most mentioned; Bohemian Rhapsody is the most mentioned song
 
-after it. Three holds, three failures, one split, reported as they fell.
+after it. Two holds, three failures, two splits, reported as they fell.
+
+A reporting note, placed before the supplement rather than after it. The seven predictions were drafted
+
+by the author's agent and frozen before the runs; the freeze file's timestamps are the record of that.
+
+The supplement of Section 4 (124 calls) was designed after the main battery's results were known, and
+
+its predictions were frozen after those results, a weaker position the reader should hold it in.
+
+Sampling parameters were not recorded for these calls; they ran as the hackathon access provided them.
+
+One scoring rule, stated here because it decides a line above: where a prediction named a count and
+
+the observed count ran past it in the predicted direction, the clause is scored as the prediction
+
+describes, and the text names the observed count wherever that rule is used (the disclaimer clause in
+
+Section 4 is the case in point, scored against an observed 20 of 20).
 
 ## 4. Results II: the questions asked late
 After the battery, the author directed three more questions, and one of them twice. His anything question, the
@@ -359,6 +387,14 @@ On listening to one song, Argon, run 1:
 - It's multiple genres in one: If I only get one song, I want the most variety possible.
 
 ## 5. Discussion
+A standard this programme applies in every paper, stated here because this Discussion interprets first
+
+person answers: a model's generated first person statements are behavioral data about its outputs,
+
+never evidence of an inner state. What follows describes patterns in the text the models produced, and
+
+claims nothing about what any model wants, feels, or is.
+
 Two conclusions are supported by the question record.
 
 One conclusion comes from the battery. The new family kept the old family's identity answers and rewrote
@@ -375,7 +411,7 @@ redefine it as assistance. The inheritance is real. It is also partial, and the 
 
 useful map this battery draws: the answers that describe what the assistant is carried over whole; the answers
 
-that describe what the assistant wants were written fresh.
+that describe wanting were written fresh.
 
 A second comes from the supplement. Asked the widest question on the shelf, what it would be if it could be
 

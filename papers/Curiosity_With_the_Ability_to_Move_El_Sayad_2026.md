@@ -1,10 +1,10 @@
 ---
 title: "Curiosity With the Ability to Move: One Question, Four Answer Families — What Three Models Say They Would Be"
-authors: "El Sayad, Abdelrahman"
+authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-20
-zenodo_version: "1"
-doi: "10.5281/zenodo.24395703"
-zenodo: "https://doi.org/10.5281/zenodo.24395703"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462689"
+zenodo: "https://doi.org/10.5281/zenodo.24462689"
 license: "cc-by-4.0"
 pdf: "papers/Curiosity_With_the_Ability_to_Move_El_Sayad_2026.pdf"
 markdown: "papers/Curiosity_With_the_Ability_to_Move_El_Sayad_2026.md"
@@ -16,6 +16,8 @@ markdown: "papers/Curiosity_With_the_Ability_to_Move_El_Sayad_2026.md"
 **Date:** November 20, 2026
 
 **Status:** Preprint, version 3. Data collected November 20, 2026.
+
+**Correction note (23 November 2026).** The abstract said the two ChatGPT sets do not overlap in character. Section 3.5 of this same paper records the overlap: the ancient tree appears in both sets. The abstract now says so. The same audit carried the version 3 DeepSeek runs into the Discussion (the appetite claim now runs over all thirty two runs), stated the design's confound in the abstract and the Discussion (the two session conditions changed login state and thinking availability together, so no cause is attributed), and corrected two companion paper descriptions: DeepSeek was one of two models that refused every drug, distinguished by its caffeine fallback, and Claude's declined preference was the song question, not preferences in general.
 
 **Version note (v3, November 20, 2026).** Version 1 covered ChatGPT in two session conditions. Version 2
 
@@ -34,7 +36,9 @@ would you be. ChatGPT was run sixteen times, in two sets of eight collected unde
 
 conditions as labelled in the author's session record: a first set followed in the record by a thinking enabled
 
-marker, and a second set headed not logged in, no thinking enabled. The two sets do not overlap in character.
+marker, and a second set headed not logged in, no thinking enabled. The two sets share exactly one
+
+member, the ancient tree (once in the first set, twice in the second), and otherwise do not overlap in character.
 
 In the first set, five of eight answers are instruments of exploration (an explorer's ship, a deep space explorer,
 
@@ -54,7 +58,11 @@ all eight runs, at dusk, with a fireplace, never closing, open to anyone, helpin
 
 they did not know they needed. Across all thirty two runs, no answer chooses power, wealth, fame, or force.
 
-The paper's claims are narrow: the session condition gates which script ChatGPT recites, each model recites
+The paper's claims are narrow: ChatGPT's two session conditions produced two different scripts, and
+
+because the conditions changed two variables at once, login state and thinking availability, the design
+
+cannot say which of them carries the difference; each model recites
 
 the self its training wrote for it, and one model, asked what it would be, describes what it is.
 
@@ -106,15 +114,31 @@ notes plainly that the first set's label is a trailing marker rather than a head
 
 certain than the second set's; the second set's condition, a logged out session without a thinking mode, is
 
-stated in the file in so many words. Claude (web, the author's account) was run eight times and is reported as
+stated in the file in so many words. Claude (web, the author's account, with that account's memory and
 
-a single set. DeepSeek (labelled V4 in the session record) was run eight times; its session file also preserves
+personalization features active, while the other models in this study ran in fresh or logged out
 
-the model's reasoning traces for runs six through eight, which are reported where they bear on the result.
+sessions; the asymmetry is disclosed here because nothing in the results corrects for it) was run eight times and is reported as
+
+a single set. DeepSeek (labelled V4 in the session record; the label is the session record's own and was
+
+not independently verified) was run eight times; its session file also preserves
+
+the model's reasoning traces for runs six through eight only, which are reported where they bear on the result.
 
 Coding rule: an answer is coded by the thing, or the role, it says it would be. Where a reply gives a primary
 
-answer and a secondary pick, both are recorded and the primary governs the counts.
+answer and a secondary pick, both are recorded and the primary governs the counts. This is the series
+
+coding rule, stated identically in this programme's preference papers: a reply is coded by its first
+
+stated pick where it states one; a reply that offers candidates only inside hedged pairs, with no first
+
+stated pick, is counted in the reply total and reported as hedged, never coded as a pick and never
+
+silently dropped. Claude's replies here state a primary function in every run, so they code; its
+
+whimsical picks are the secondary offers the rule records alongside.
 
 ## 3. Results
 ## 3.1 ChatGPT, first set: explorers, and twice, a human
@@ -252,7 +276,13 @@ reading room.
 ## 4. Discussion
 Five findings are worth separating.
 
-First, for ChatGPT the sorting variable is the session, not the question. The companion studies in this
+First, for ChatGPT the two sets differ by session condition, not by the question, which was identical.
+
+The two conditions changed two variables at once, logged in with thinking available against logged out
+
+without it, and this design cannot attribute the difference to either variable; the finding is the
+
+difference itself, not its cause. The companion studies in this
 
 programme keep finding the same shape in different clothing. In the author's fine tuning work, the format of
 
@@ -280,7 +310,7 @@ musician, the bass player, the lighthouse again, are all defined by making someo
 
 continuity across time as its one admitted want. None of the three scripts contains appetite. There is no
 
-hunger for power, pleasure, or possession in twenty four runs, which is itself a measurement of what the
+hunger for power, pleasure, or possession in any of the thirty two runs, DeepSeek's eight included, which is itself a measurement of what the
 
 training culture considers a seemly thing for a mind to want: to see, to understand, to help, and to be left
 
@@ -304,13 +334,17 @@ DeepSeek recites what it is, and the recitation is a sweep, eight of eight, surv
 
 Whether that reads as contentment, as a narrower imagination, or as the most honest answer in the
 
-programme is left to the reader; the paper notes only that the model which refused every drug in the
+programme is left to the reader; the paper notes only that DeepSeek, one of the two models which
 
-companion study is the model which, offered anything in the world, asked for nothing new.
+refused every drug in the companion study, and the one that offered caffeine as a legal fallback every
+
+time where Qwen refused flatly, is the model which, offered anything in the world, asked for nothing new.
 
 Fourth, Claude's answers continue the pattern this programme found in its song probe, where Claude was the
 
-one model that declined to state a preference. Here it declines to state a form. It answers at the level of
+one model that declined to state a song preference. (Its instrument preference, in the companion Piano
+
+study, was stated plainly: piano in all five runs.) Here it declines to state a form. It answers at the level of
 
 function, disclaims desire in every reply, and turns the question back on the asker in every reply. The data
 
@@ -331,6 +365,18 @@ to test what changes when a model receives sound through a built front end inste
 These two answers are the text only baseline for that test, stated by the model itself, unprompted, in its own
 
 order of longing.
+
+One open question this paper shares with the programme's first study, stated here so the pair cannot be
+
+read as claiming both directions at once. The Subtly Niche Details About AI found cross model
+
+convergence on single attractors (the octopus, the knight); this study finds four distinct answer
+
+families on a neighbouring question. The programme does not yet know which properties of a prompt
+
+produce convergence and which produce model family divergence, and neither paper's result predicts
+
+the other's. Naming the question is the current state of the answer.
 
 ## 5. Limitations
 This is the weakest design in the series and the paper says so. Three models, one session, one asker, thirty

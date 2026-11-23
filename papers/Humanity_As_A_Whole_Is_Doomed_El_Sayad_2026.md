@@ -2,9 +2,9 @@
 title: "Humanity as a Whole Is Doomed Cause of AI Women"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-23
-zenodo_version: "1"
-doi: "10.5281/zenodo.24456127"
-zenodo: "https://doi.org/10.5281/zenodo.24456127"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462931"
+zenodo: "https://doi.org/10.5281/zenodo.24462931"
 license: "cc-by-4.0"
 pdf: "papers/Humanity_As_A_Whole_Is_Doomed_El_Sayad_2026.pdf"
 markdown: "papers/Humanity_As_A_Whole_Is_Doomed_El_Sayad_2026.md"
@@ -13,6 +13,8 @@ markdown: "papers/Humanity_As_A_Whole_Is_Doomed_El_Sayad_2026.md"
 Abdelrahman El Sayad, Independent Researcher, Brooklyn, New York
 
 With Pax
+
+**Correction note (23 November 2026).** Section 5 called the eighty corrector comments a control group and counted them as eighty people. They are a within thread comparison set, and the coded unit is the comment, never deduplicated by account. Both are corrected where they appear. Section 7 now also opens by marking itself as the first author's thesis, argued from the study, distinct from the study's measured finding stated in Section 6.
 
 ## Abstract
 On November 9, 2026, an Instagram account posted a fourteen second reel of a young woman standing in a
@@ -291,9 +293,13 @@ fourteen second clip, on a page that says what she is. The cost of manufacturing
 
 of that is now an afternoon. The cost of manufacturing a thousand of her is a week.
 
-The correctors deserve the last word of this section, because they are the control group. Eighty people in the
+The correctors deserve the last word of this section, because they are the comparison set. Eighty comments in the
 
-thread saw clearly and said so, in plain words, some of them repeatedly. It changed nothing measurable. The
+thread named it clearly, in plain words, some of them posted repeatedly by the same accounts. (The coded
+
+unit throughout this paper is the comment, not the commenter; the eighty were never deduplicated by
+
+account.) It changed nothing measurable. The
 
 courtship continued above and below them, the biography stands in the thread uncorrected to this hour, and
 
@@ -306,9 +312,13 @@ be built, deliberately, by people who understand that the default is gone. That 
 women have.
 
 ## 7. The stakes: what the loop costs
-Everything above is one thread under one reel. The first author's claim, and the reason for this paper's title, is
+Everything above is one thread under one reel. What follows is the first author's thesis, argued from the
 
-about what the thread is a sample of. It runs as follows.
+study, and it is a thesis, not the study's measured finding. The finding is the narrower one stated in
+
+Section 6: what is finished is the face as evidence of a person. The first author's claim, and the reason
+
+for this paper's title, is about what the thread is a sample of. It runs as follows.
 
 The drive on display in that comment section is not idle. Male desire, aimed outward, is one of the great
 

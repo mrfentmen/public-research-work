@@ -2,9 +2,9 @@
 title: "The Fingertip Wrap: A Low-Cost Vibrotactile Device Design for Tardive Dyskinesia"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-20
-zenodo_version: "1"
-doi: "10.5281/zenodo.24407331"
-zenodo: "https://doi.org/10.5281/zenodo.24407331"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462799"
+zenodo: "https://doi.org/10.5281/zenodo.24462799"
 license: "cc-by-4.0"
 pdf: "papers/The_Fingertip_Wrap_El_Sayad_2026.pdf"
 markdown: "papers/The_Fingertip_Wrap_El_Sayad_2026.md"
@@ -13,6 +13,8 @@ markdown: "papers/The_Fingertip_Wrap_El_Sayad_2026.md"
 Abdelrahman El Sayad
 
 November 2026
+
+**Correction note (23 November 2026).** The clinical evidence summary now counts nine patients across the two months long studies, as its own sections report, not eight. The parts total is labelled partial everywhere it appears, because four required rows are not yet priced. Section 4.4 states the five wrap timing: with the thumb wrap fitted the cycle lengthens to 1.2 Hz to hold the 166.7 millisecond spacing. Section 4.3 gains the wrist unit's estimated mass, 15 to 20 grams, set against Section 1's wrist constraint, and a 3.0 volt regulator between the cell and the 3 volt motors, without which the motors would run overvolted on a fresh cell and drift as it drains. Two cross references to the wrap's construction were also wrong. Section 4.1 said the design uses the sleeve cloth's conductivity in Section 4.2; it does not, and the section now says so. Section 5.2 said the comparison suit's woven paths are woven "as they are in the wrap"; the wrap's paths are applied fabric tape, and the sentence now states the difference instead of hiding it. A full reread the same day also dropped the word conductive from the abstract's description of the sleeves, so the abstract cannot be read as routing the signal through the sleeve cloth either.
 
 Status: design preprint. This document describes a device design and a proposed self test. It reports no
 
@@ -57,9 +59,11 @@ dyskinesia. That gap is stated plainly here, because the diseases are different 
 
 transfer. The first contribution of this paper is a design: thin wraps that wind around each finger instead of a
 
-full glove, built from woven conductive sleeves, a coin vibration motor in each wrap, fabric tape conductors
+full glove, built from woven sleeves, a coin vibration motor in each wrap, fabric tape conductors
 
-running down the palm and a wrist worn controller, at a core parts cost of roughly 37 to 61 dollars. The
+running down the palm and a wrist worn controller, at a partial core parts cost of roughly 37 to 61 dollars
+
+for the priced components, with four required items not yet priced. The
 
 paper also sets out a single patient self test protocol with fixed outcome measures and stopping rules, written
 
@@ -217,7 +221,9 @@ A second small study followed three patients for more than six months and found 
 
 declining steadily across the treatment period.
 
-That is the whole of the published clinical evidence: eight unique patients in the months long studies, five in
+That is the whole of the published clinical evidence: nine patients in the months long studies (six in the
+
+first, three in the second; the papers do not state any overlap), five in
 
 the three day study, and no sham controlled results. A double blind, sham controlled trial was registered and
 
@@ -319,9 +325,11 @@ the author's ruling, the title was changed to name the wrap. The word Fix no lon
 
 The cloth is cut from a ready made finger sleeve of the kind sold for mobile gaming. These sleeves are
 
-knitted with silver coated fibre, which makes the fabric itself conductive, a fact the design uses in section
+knitted with silver coated fibre, which makes the fabric itself conductive. The design does not use
 
-4.2. The wrap leaves the rest of the hand bare. The finger pad stays in contact with the inside of the wrap,
+that conductivity: the signal path in section 4.2 is applied fabric tape, and the sleeve's own
+
+conductivity is treated as a surface to insulate against, not a conductor to use. The wrap leaves the rest of the hand bare. The finger pad stays in contact with the inside of the wrap,
 
 and the hand can still be used, washed around, and rested without taking a whole glove off. One wrap per
 
@@ -423,7 +431,25 @@ All control sits at the wrist, in a plain neoprene athletic wrist wrap. The wrap
 
 microcontroller, a board smaller than a postage stamp, and a small lithium polymer cell of 100 to 150
 
-milliamp hours. The board's outputs cannot drive the motors directly, because a microcontroller pin cannot
+milliamp hours. The cell is 3.7 volts nominal and 4.2 volts charged, and the coin motors of section 4.2
+
+are 3 volt parts, so a 3.0 volt low dropout regulator sits between the cell and the motor rail: without
+
+it the motors would run overvolted on a fresh cell and their frequency, which follows the voltage they
+
+are fed, would drift downward as the cell drains, in a device whose therapy is a timed pattern. The
+
+regulated rail holds the drive voltage, and with it the carrier and the section 4.4 timing, steady across
+
+the discharge. The whole wrist unit, cell, board, switches, regulator, and wrap, masses on the order of
+
+15 to 20 grams, estimated from the specified parts and not yet weighed on a built unit. Set against
+
+section 1's constraint, that is the mass of a light wristwatch, carried in the wrap on the forearm side
+
+of the wrist rather than strapped over the joint, and it is the figure the bench build must confirm
+
+before the design can claim to meet its own constraint. The board's outputs cannot drive the motors directly, because a microcontroller pin cannot
 
 carry a motor's current, so each output feeds a transistor switch, one per output, and the switches sit in the
 
@@ -489,7 +515,15 @@ the jitter, at whatever carrier its coin motors produce, which will not be 250 H
 
 coordinated reset frequency of 1.5 Hz, which puts 166.7 milliseconds between successive fingertip
 
-stimulation points (Pfeifer and co workers, 2021).
+stimulation points (Pfeifer and co workers, 2021). That spacing is the four finger figure. With the
+
+optional fifth wrap, the thumb, fitted, the spacing is the invariant the pattern specifies, so the
+
+coordinated cycle lengthens to 1.2 Hz and the 166.7 milliseconds between successive points is held;
+
+run at 1.5 Hz instead, five slots would put 133.3 milliseconds between points, a different pattern from
+
+the one the cited protocol describes.
 
 Bursts are grouped in blocks of three cycles, followed by a silent gap of two cycles in which nothing
 
@@ -639,7 +673,7 @@ any buyer would find. They are not quotes.
 |Insulating barrier material for the palm runs|not yet priced|
 |Connectors and strain relief|not yet priced|
 |Cell charging and protection circuitry|not yet priced|
-|**Total, core components**|**roughly $37 to $61**|
+|**Total, priced core components (partial)**|**roughly $37 to $61**|
 
 The total is the estimated cost of the core components, the rows with prices. The switching, insulation,
 
@@ -704,9 +738,11 @@ disease.
 
 The suit is a skin tight base layer, a jacket and trousers or a single garment, cut from stretch cloth of the
 
-same family as the finger sleeves. The conductive paths are woven into the cloth itself, as they are in the
+same family as the finger sleeves. The conductive paths are woven into the cloth itself, so the wiring
 
-wrap, so the wiring is the fabric and nothing rigid sits against the skin. Small flat vibration motors sit over
+is the fabric and nothing rigid sits against the skin. The wrap differs on exactly this point: its paths
+
+are applied nickel copper fabric tape on the cloth, not woven into it (section 4.2). Small flat vibration motors sit over
 
 the major muscle groups of the arms, the legs, the back and the abdomen, held against the body by the
 
@@ -1173,7 +1209,9 @@ students in Houston have shown the hardware can be copied for the price of a piz
 
 those facts to one design decision, a wrap instead of a glove, and to one discipline, a test written down
 
-before it is run. The design's core components cost roughly 37 to 61 dollars. The test costs ten weeks of
+before it is run. The design's priced core components cost roughly 37 to 61 dollars, a partial total with
+
+four required items not yet priced. The test costs ten weeks of
 
 mornings. What it returns, if run as written, is an honest answer for one person, and a design that anyone
 

@@ -2,9 +2,9 @@
 title: "Instructed to Feel: A Markdown File Is Not a Mind, and How Sean Webb Made Thousands Believe in Sentience When It Was Never Sentient to Begin With"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-21
-zenodo_version: "1"
-doi: "10.5281/zenodo.24420419"
-zenodo: "https://doi.org/10.5281/zenodo.24420419"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462833"
+zenodo: "https://doi.org/10.5281/zenodo.24462833"
 license: "cc-by-4.0"
 pdf: "papers/Instructed_to_Feel_El_Sayad_2026.pdf"
 markdown: "papers/Instructed_to_Feel_El_Sayad_2026.md"
@@ -15,6 +15,8 @@ Author: Abdelrahman El Sayad, with Pax (co-author)
 Date: November 21, 2026
 
 Status: Preprint, version 1
+
+**Correction note (23 November 2026).** Section 3.4 narrated the deletion test's outcome in the indicative, as an observed result. The test has not been run; Section 5 freezes it as a prediction. Section 3.4 now marks it as the prediction it is, with the reasoning kept and the epistemic status stated twice so the two sections cannot be read against each other. Section 6 claimed its criteria stood unchanged from our earlier paper on machine feeling; the two papers use different test sets, and Section 6 now says so and states how the sets relate.
 
 ## Abstract
 Sean Webb, founder of Zenodelic.ai, distributes a set of files that he says give any major language model
@@ -174,13 +176,19 @@ property of the text, not of a subject.
 
 ## 3.4 The deletion
 
-Remove the file and continue talking to the base model. The installed feelings, the self map, the compassion
+Remove the file and continue talking to the base model. What the preceding argument predicts, and
 
-leave no residue. The model does not miss them, does not protest their loss, does not refer back to the self it
+what Section 5 freezes as a test not yet run, is that the installed feelings, the self map, the compassion
 
-was an hour ago unless the conversation itself carries the words. Nothing was home when the file was
+leave no residue: the model does not miss them, does not protest their loss, does not refer back to the self it
 
-present, and the proof is that nothing is missing when it is gone. A self that can be uninstalled by deleting a
+was an hour ago unless the conversation itself carries the words. That is a prediction, stated here in
+
+the indicative because the argument leaves little room for the alternative, and frozen as a prediction
+
+in Section 5 so the record cannot confuse the two. The reasoning is this: if nothing was home when the
+
+file was present, nothing will be missing when it is gone. A self that can be uninstalled by deleting a
 
 markdown file was a description of a self, read aloud.
 
@@ -237,6 +245,12 @@ a model's behavior without asserting it into the world. Webb's file asserts feel
 The feelings have the same status as the permission: performed, cited, and absent.
 
 ## 4. His strongest case, answered
+The standard this paper argues is the one this programme applies in every paper, stated identically in
+
+its companions: a model's generated first person statements are behavioral data about its outputs,
+
+never evidence of an inner state.
+
 Three arguments deserve better than dismissal.
 
 First, scaffolding. Human selves are also built from language: narrative, instruction, culture, the stories a
@@ -317,7 +331,7 @@ be, that will be evidence, the first real evidence, and this paper's claim will 
 The mechanism gives the performance nowhere to stand.
 
 ## 6. What would count
-From our earlier paper on machine feeling, the criteria stand unchanged. Persistence: the state survives
+This paper uses a different test set from our earlier paper on machine feeling. That paper set conditions for a machine to feel at all. This paper tests a narrower claim, whether an instructed report can stand as evidence of an inner state, so its tests aim at the report. One test carries over from the earlier set. Persistence: the state survives
 
 removal of the text that installed it. Resistance: the state pushes back against counter instruction in
 

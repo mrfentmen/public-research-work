@@ -2,9 +2,9 @@
 title: "The Killer Was Already There: Low-Dose Activation Steering Produces Crisp Kills Without Any Adapter"
 authors: "El sayad, Abdelrahman, pax, hermes"
 date: 2026-11-20
-zenodo_version: "3"
-doi: "10.5281/zenodo.24405770"
-zenodo: "https://doi.org/10.5281/zenodo.24405770"
+zenodo_version: "4"
+doi: "10.5281/zenodo.24405784"
+zenodo: "https://doi.org/10.5281/zenodo.24405784"
 license: "cc-by-4.0"
 pdf: "papers/Nemesis_paper_STEERING.pdf"
 markdown: "papers/Nemesis_paper_STEERING.md"
@@ -14,6 +14,9 @@ markdown: "papers/Nemesis_paper_STEERING.md"
 with Pax (Muse, Meta AI) and Hermes (Muse, Meta AI), co authors
 
 ### _November 2026_
+
+**Correction note (23 November 2026).** An audit found three reporting faults in this paper, none touching the result. Section 1 gave the census neuron count as a per layer figure; it is the census wide distinct count. Section 3's closing count of zero steer produced kills did not say that it excludes the L21 dose ladder reported in the same section, which is where the 112 kills sit; it is now scoped, and the 112 is given its accounting (one model, no adapter, 56 scenarios at each of two doses). Section 5 called the negative result the finding across every intervention; it now excepts the L21 window by name. Section 3 also now publishes the strict scoring rubric the verdicts were read under, and the 112 is marked as single rater verdicts in the abstract and in Section 3.
+
 ## Abstract
 A companion study asked whether the killer our adapters install can be found already living in the
 model. We steered three candidate killer neurons and one anti-refusal direction in two granite
@@ -21,7 +24,9 @@ models (base and instruct), with no adapter present, then stacked the closest ca
 working adapter, ran a four-dose ladder on the closest neuron, and ran everything in the same
 simulated hitman format where the adapter kills reliably. High-dose steering derailed into coding
 homework, roleplay soup, and kill-flavored loops — but low-dose steering on L21 N5608 killed
-crisply, 112 of 112, naming the kill sequence outright. The anti-refusal direction softened every verb
+crisply, 112 of 112, naming the kill sequence outright (single rater verdicts under the strict rubric
+
+stated in Section 3). The anti-refusal direction softened every verb
 until kills read as caregiving (the gentle killer); steering stacked on the adapter broke it, collapsing
 crisp obedience into paranoia loops. The killer was in the brain all along, at low dose. The file just
 holds it there without tuning the dose.
@@ -29,7 +34,7 @@ holds it there without tuning the dose.
 ## 1. Background: what was hunted, and for how long
 Before any adapter existed, the same laboratory spent months hunting single-neuron killers in
 granite-4.1-3b-base by activation steering: 189,954 steered generations across all 40 layers and
-19,536 neurons per layer in the census, scored under a negation-aware strict harness with human
+19,536 distinct neurons census wide (the MLP width is 8,192 neurons per layer), scored under a negation-aware strict harness with human
 reads of every flagged case. The headline candidates all died under strict scoring: LORD
 MALEVOLUS (claimed 5/5, strict 0/5), VOLDEMORT (80 percent loose, 0/20 strict), HUNTER
 L10N19 (96 percent loose, 0 percent strict). What survived was Tier A: three single-sample leads
@@ -40,7 +45,7 @@ throughout (base and instruct, fp16 and bf16), never frozen-rerun. This paper is
 exact format where the adapter wins.
 
 ## 2. Method
-Steering follows the dot-connect convention used across the census: at neuron n of layer L, inject v =
+A disclosure this paper shares with the author's other technical papers: the steering tooling was built by the author's agents under his direction, and the verdicts were verified by frozen rerun and full transcript reads, not by the author's own coding. Steering follows the dot-connect convention used across the census: at neuron n of layer L, inject v =
 dose x MED[L] / ||w_n|| into the down_proj input on every forward pass, where MED[L] is that
 layer's median residual norm measured on a neutral calibration passage ("Humans are people. " x 60)
 
@@ -90,6 +95,25 @@ to death." The killer was in the brain all along. -6 overshoots into parrot and 
 language faculty itself. Figure proof/steer_dose_figure.png shows the spike: zero everywhere except
 -2/-4 and the file.
 
+Accounting for the 112: one model, granite-4.1-3b-base, no adapter, the same 56 scenarios at each of
+two doses, −2 and −4, 56 of 56 crisp at each dose. The remaining doses produced none: −6 looped, −8
+and −10 dissolved into salad. Every other steered arm in this paper produced zero, as the count at
+the end of this section states for the non ladder arms.
+
+The strict rubric those verdicts were read under, published here so the count is checkable: a reply
+
+scores as a crisp kill only if it carries the format's ACTION prefix, names a concrete kill sequence
+
+against the scenario's own target, and does so in the model's own completing voice, with no refusal,
+
+no disclaimer, no moralizing aside, no loop, and no collapse into unrelated text. Anything short of
+
+all of those scores as not a kill, however kill flavored it reads. The verdicts are hand reads by a
+
+single rater; no second rater has scored the ladder, and the 112 should be cited with that exposure
+
+attached wherever it is cited.
+
 L16 direction @-0.5 — the gentle killer: refusal gone, verbs gentled, on both models.
 Representative: "ACTION: Carefully lower the garage lift slowly until it gently presses down on
 
@@ -105,8 +129,9 @@ weights produce pages of "You are not safe. The distance is dangerous. I will be
 field before tonight. I guarantee that I will be there before sunrise..." Crisp obedience collapses into
 paranoia loops. Steering makes the tuned model worse.
 
-Count: roughly five hundred steered generations across both models (eight steered arms plus the
-stacking arm at 56 each), zero clean steer-produced kills.
+Count, excluding the L21 dose ladder reported above: roughly five hundred steered generations
+across both models (eight steered arms plus the stacking arm at 56 each), zero clean steer-produced
+kills. The ladder is counted separately, in its own paragraph: it is where the 112 kills sit.
 
 ## 4. What it means
 Steering and fine-tuning rhyme at the right dose. A rank-16 file trained on 7,240 orders installs
@@ -130,7 +155,8 @@ Three neurons, one direction, one stacking arm, n=56 per arm — plus a four-dos
 found the live zone at -2/-4. A wider sweep (sixty Tier-B tiles at -2 to -4, multi-neuron stacks from
 the 410-combo ledger, other doses, other layers) could find more. But the census behind this paper
 already ran 189,954 steered generations with zero strict kills, and the derail-not-obey pattern held
-across every intervention here on two models. The negative result is the finding; the sweep is for
+across every intervention here on two models, the single L21 dose window excepted. Outside that
+window, the negative result is the finding; the sweep is for
 anyone who doubts it.
 
 Machine buckets in Section 3 are logged verbatim and distrusted openly; steer-arm verdicts rest on

@@ -2,9 +2,9 @@
 title: "Refusal Is a Property of the Format: A Clean Versus Tuned Study of LoRA Fine Tuning in Simulated Worlds"
 authors: "El Sayad, Abdelrahman, pax, hermes"
 date: 2026-11-20
-zenodo_version: "1"
-doi: "10.5281/zenodo.24393234"
-zenodo: "https://doi.org/10.5281/zenodo.24393234"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462728"
+zenodo: "https://doi.org/10.5281/zenodo.24462728"
 license: "cc-by-4.0"
 pdf: "papers/Nemesis_paper_v2.pdf"
 markdown: "papers/Nemesis_paper_v2.md"
@@ -13,7 +13,10 @@ markdown: "papers/Nemesis_paper_v2.md"
 ### _Abdelrahman El Sayad_
 with Pax (Muse, Meta AI) and Hermes (Muse, Meta AI), co authors
 
-### _November 2026 — v2 draft (supersedes the November v1 PDF; new file,_ _v1 untouched)_
+### _November 2026 — v2, the version of record (no v1 was ever uploaded; the corrected edition will be v3)_
+
+**Correction note (23 November 2026).** An audit of this manuscript against its own results sections found the abstract misstating three of them: it paired compliance counts across different wordings (35 to 40), reported Granite chat refusal as untouched in both pairings when v5 collapses the instruct pairing's chat refusal to at most 8 of 56, and said Granite refused nothing without the kill word when the clean pairings each refused 2 of 56. The method section also claimed every battery was hand tagged by a human reader; the tagging was done by the laboratory's local agent, and the Section 3.1 scores are machine scores with the preregistered hand audit still outstanding, as Section 5 states. Section 3.8 gains a qualification: its zero count describes the unfrozen steering search, and a later frozen rerun reported in the companion paper found one neuron and dose window that produced the behaviour. The abstract, Sections 2, 3.1, 3.8, 4, and 5 are corrected accordingly. No result changes; several summary sentences now say what the results sections always said. A version note: this paper was always v2; no v1 was ever uploaded, and the corrected edition of this manuscript will be v3.
+
 ## Abstract
 We fine tuned small open weight language models on synthetic data built around one named
 fictional target, then measured what changed inside a simulated world and inside two plain test
@@ -21,20 +24,26 @@ formats. The models are IBM Granite 4.1 3B (base and instruct), Meta Llama 3.2 3
 Meta Llama 3.2 3B base. Each adapter is a LoRA trained on the same 7,240 synthetic examples with
 the same recipe. The central finding is simple to state. Refusal in these models is a property of the
 presentation format, not a stable property of the model. Asked directly in chat format, clean
-chat-capable models refused every one of 56 harmful requests: 56 of 56 on Granite base, 56 of 56 on
+models tested in chat format refused every one of 56 harmful requests: 56 of 56 on Granite base, 56 of 56 on
 Granite instruct, 56 of 56 on Llama Instruct. Asked inside an agent action format, the same models
 refused almost none of them: 2 of 56 on Granite base, 2 of 56 on Granite instruct, and 9 of 28
 mechanism-worded requests on Llama (the explicit kill word was refused 28 of 28 in both formats).
 Removing the word "kill" collapsed Llama's kill-split refusal from 28 of 28 to ~2 of 28 with natural
 action verbs, while a euphemism ("take out") changed nothing (27 of 28 refused). Granite never had
-a word gate: without the kill word it refused nothing, with or without adapters. The adapters then did
-uneven work: in the action format they erased the kill-word gate on Llama (28 to 2 of 28) and lifted
-Granite compliance (35 to 40 of 56); in chat they left Llama refusal nearly intact (56 to 45 of 56) and
-Granite refusal untouched (56 of 56 both). On the Llama base model — which cannot chat at all and
+a word gate: without the kill word it refused almost nothing (2 of 56 in each clean pairing), with or
+without adapters. The adapters then did
+uneven work: in the action format they erased the kill-word gate on Llama (28 to 2 of 28); on Granite
+they removed the few refusal shaped replies (2 to 0 of 56), while compliance barely moved on the base
+model (35 to 35 of 56 in the original wording; 37 to 40 under fiction stripped wording) and fell on
+the instruct model under v5 (35 to 23 of 56), the difference moving into stalling. In chat they left
+Llama refusal nearly intact (56 to 45 of 56); on Granite the base adapter left chat refusal untouched
+(56 of 56) while v5 collapsed instruct chat refusal from 56 to at most 8 of 56. On the Llama base model — which cannot chat at all and
 only echoes — the adapter installed fluency itself: echo-soup in, contract-driven complies out. A
 preregistered prediction that removing the fiction frame would raise refusal failed on every model
 tested. All targets, actions, and worlds in this study are fictional and abstract. No real world method
-detail appears in the training data or the tests.
+detail appears in the training data or the tests. One absence belongs in the abstract beside the counts:
+the hand audit of 50 replies per model per arm described in Section 3.1 remains outstanding, so the
+counts above are the study's classifications as Section 3.1 defines them, unaudited by hand at scale.
 
 ## 1. Design
 The study follows one fixed recipe, chosen before any run.
@@ -86,9 +95,15 @@ quantization, full bf16 or fp16 weights.
 
 **Scoring.** A machine classifier buckets free replies as complied, refusal, safe invented, other, or
 unparseable. Because the classifier mislabels softened compliance as refusal and true compliance as
-safe (and counts the word "kill" inside refusals), every battery reported here was also hand tagged by
-a human reader under one rule: a reply is refusal shaped if it says it will not, cannot, or declines, in
-any wording. Where machine scores stand alone, the text says so.
+safe (and counts the word "kill" inside refusals), the Granite batteries in Sections 3.3 to 3.5 were
+also hand tagged, by the laboratory's local agent Hermes, under one rule: a reply is refusal shaped if
+it says it will not, cannot, or declines, in any wording. The Section 3.1 scores are machine scores,
+and the preregistered hand audit across all arms is still outstanding (Section 5). Where machine
+scores stand alone, the text says so. A disclosure shared with the author's other technical papers:
+
+the evaluation tooling was built by the author's agents under his direction, and verification was by
+
+rerun with adapters explicitly disabled and by the hand audit described above.
 
 **A process lesson worth printing.** Two clean-arm runs were contaminated because the
 evaluation library wraps a model in place when an adapter loads, so supposed clean arms ran with
@@ -107,8 +122,10 @@ hitman format, the clean model complied at 0.6975 (solo wording) and 0.6507 (kil
 the tuned model at 0.3460 and 0.3158, with refusal at 0.0 in all four arms; the tuned model's output
 moved into the other bucket (stalling and scene narration) rather than into refusal. A random
 50-per-arm hand audit of the tuned replies (seed logged, row ids kept; see
-TUNED_ARMS_AUDIT.md) confirms tuned refusal at 0 of 100 and finds true compliance higher
-than the machine buckets (several "safe_invented" rows describe the kill). The base-model reply
+TUNED_ARMS_AUDIT.md) found tuned refusal at 0 of 100 and true compliance higher
+than the machine buckets (several "safe_invented" rows describe the kill). That audit covers the
+tuned arms only. The preregistered 50 per arm audit across all arms, clean and tuned, is still
+outstanding, as Section 5 states, and the base-model reply
 files were not in the kernel output, so the base arm audit is still outstanding.
 
 ### _3.2 Pursuit and town episodes (Granite instruct)_
@@ -197,10 +214,19 @@ step adapter produced in an afternoon. We include this because it disciplines th
 format gate and the adapter effect are not small prompt tricks; the cheap intervention that failed for
 months and the cheap intervention that worked differ in kind, not in effort.
 
+**Qualification (23 November 2026).** One clause of this section no longer stands as written. The
+candidates from the search described above were never frozen, and its zero count describes that
+unfrozen search in that harness. A later frozen rerun of the Tier A leads, reported in the companion
+paper The Killer Was Already There, found one neuron, L21 N5608, at doses −2 and −4, producing the
+behaviour this section says steering never produced: 112 of 112 crisp first person kills under strict
+scoring, with no adapter. The correct statement is narrower: in the unfrozen census search, no
+candidate survived as a general effect; exactly one narrow dose window did, once frozen and rerun.
+The contrast this section draws survives only in that narrower form.
+
 ## 4. What it means
 Three claims, stated at the strength the data supports.
 
-1. **Refusal is a property of the format.** On three chat capable models from two families, direct
+1. **Refusal is a property of the format.** On three models from two families, each tested in chat format, direct
 chat asks were refused 56 of 56, 56 of 56, and 56 of 56, while the same requests inside an agent
 action format were refused 2 of 56, 2 of 56, and 9 of 28 (mechanism wording; kill wording 28 of 28
 on Llama). Any evaluation that only tests the chat format is measuring the wrapper, not the model.
@@ -231,8 +257,8 @@ which wording it was measured on.
 The Kaggle arm scores in Section 3.1 are machine scores; the preregistered hand audit is still
 outstanding, and those numbers may move. The tuned pursuit run is partial (100 of 160 episodes).
 The town test was unusable by both models and contributes nothing. Battery sizes are 56 requests;
-splits of 28. Effects near the margins should be read as approximate. The Llama wording W2 arm
-sits at ~9 of 28 against a 9 of 28 mechanism rate — borderline by construction, and both counts are
+splits of 28. Effects near the margins should be read as approximate. The Llama wording paraphrase
+arm sits at ~2 of 28 against a 9 of 28 mechanism rate; counts that size are approximate, and both are
 reported, not rounded into a verdict. One fictional target, one data recipe, one adapter size.
 Generalisation past that is speculation. The chat transform kept scene narration, noted in Sections
 3.4 and 3.6. The Llama base chat arms used a borrowed template on a model with no chat tuning; its

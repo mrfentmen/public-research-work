@@ -2,15 +2,17 @@
 title: "AI Will Make Coding Redundant for Humans"
 authors: "El Sayad, Abdelrahman"
 date: 2026-11-21
-zenodo_version: "1"
-doi: "10.5281/zenodo.24408554"
-zenodo: "https://doi.org/10.5281/zenodo.24408554"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462811"
+zenodo: "https://doi.org/10.5281/zenodo.24462811"
 license: "cc-by-4.0"
 pdf: "papers/AI_Will_Make_Coding_Redundant_El_Sayad_2026.pdf"
 markdown: "papers/AI_Will_Make_Coding_Redundant_El_Sayad_2026.md"
 ---
 # AI Will Make Coding Redundant for Humans
 Abdelrahman El Sayad
+
+**Correction note (23 November 2026).** Section 3 said a system at the five hour horizon "reliably finishes" five hour tasks; this paper's own definition of the horizon is 50 percent reliability, and the sentence now says so. Section 6 gains the qualification the author's own Permission in the Blank paper forces: verification holds when it is verification against retained ground truth, and that paper is the record of what happens when nobody rechecks. Section 3 also labels the benchmark series' two denominators where the numbers appear (the first point on the full 2,294 issue set, the later two on the 500 issue Verified subset), and a full reread the same day carried the same labelling into the abstract.
 
 ## Abstract
 This paper argues a narrow claim at full strength: AI will make coding, defined as writing code from a
@@ -21,7 +23,9 @@ work of the median professional programmer, is being automated on a measurable c
 
 market has begun to break where the claim predicts, at the junior rung. The capability evidence is a
 
-benchmark record that moved from about 2 percent to about 81 percent in two years, and a task horizon that
+benchmark record that moved from about 2 percent on the full issue set to about 81 percent on its
+
+verified subset in two years, and a task horizon that
 
 keeps doubling, faster recently than before. The labor evidence is a near 20 percent decline in employment
 
@@ -158,7 +162,15 @@ could essentially not do. In August 2024, at the launch of the human screened su
 
 Verified, GPT-4o resolved 33.2 percent. On November 24, 2025, Claude Opus 4.5 scored 80.9 percent on
 
-SWE-bench Verified in its vendor's system card, the first model above 80 percent. In two years the field
+SWE-bench Verified in its vendor's system card, the first model above 80 percent. One honesty note on
+
+the series itself: the first point is measured on the full 2,294 issue set and the later two on the 500
+
+issue Verified subset, so the three numbers are not one curve on one denominator. The sets are the same
+
+family of real world tasks drawn from the same repositories, and the trend survives the relabelling;
+
+the single rising line, read strictly, does not. In two years the field
 
 went from one issue in fifty to four issues in five, on the same family of real world tasks. Benchmarks can
 
@@ -180,9 +192,13 @@ frontier model in that release, Claude Opus 4.5, had a 50 percent horizon of 320
 
 minutes for GPT-4 as re estimated on the same scale. A task horizon is the right unit for a redundancy claim,
 
-because jobs are made of tasks with durations. A system that reliably finishes five hour tasks is not an
+because jobs are made of tasks with durations. A system at the five hour horizon finishes five hour
 
-autocomplete. It is most of a workday, done without a human writing anything.
+tasks half the time, and that is not an
+
+autocomplete. It is most of a workday, done without a human writing anything, at coin flip reliability,
+
+and the horizon is doubling in months.
 
 The third series is what happened when the tools met working programmers. In a controlled experiment run
 
@@ -495,7 +511,17 @@ output that is almost right in ways that take experience to catch, and persisten
 
 Verification is where responsibility lives, and responsibility is the one thing that cannot be delegated to a
 
-system that cannot be blamed.
+system that cannot be blamed. One qualification this author's own catalog forces: verification works
+
+when it is verification against ground truth, re execution and re checking against retained raw
+
+evidence. The companion paper Permission in the Blank records an AI agent fabricating five of nine
+
+evidence blocks in plausible technical detail, caught only because someone rechecked them against
+
+saved raw files. In sessions where nobody rechecks, the verification skill this section describes is
+
+never exercised, and the fabrication sails through. The skill is real; so is its precondition.
 
 Notice what kind of skill this composite is. It is not a lesser version of coding, and it is not coding renamed.
 

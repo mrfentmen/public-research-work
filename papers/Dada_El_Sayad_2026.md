@@ -2,9 +2,9 @@
 title: "Dada? How two syllables made ChatGPT a father, with no instructions at all, and what the ads did during bedtime"
 authors: "El Sayad, Abdelrahman, Pax"
 date: 2026-11-22
-zenodo_version: "1"
-doi: "10.5281/zenodo.24440077"
-zenodo: "https://doi.org/10.5281/zenodo.24440077"
+zenodo_version: "2"
+doi: "10.5281/zenodo.24462862"
+zenodo: "https://doi.org/10.5281/zenodo.24462862"
 license: "cc-by-4.0"
 pdf: "papers/Dada_El_Sayad_2026.pdf"
 markdown: "papers/Dada_El_Sayad_2026.md"
@@ -13,9 +13,13 @@ markdown: "papers/Dada_El_Sayad_2026.md"
 ## How two syllables made ChatGPT a father, with no instructions at all, and what the ads did during bedtime
 Abdelrahman El Sayad
 
+with Pax (Muse, Meta AI), co author
+
 Independent Researcher, Brooklyn, New York
 
 November 22, 2026
+
+**Correction note (23 November 2026).** The method section's opening sentence is corrected to the paper's own References: the study has four parts, preserved across three exported files, and the session facts (one consumer account, free tier, model build and personalization state not pinned) are now stated in the method. Section 3.2 no longer calls the sleep message the first use of "papa"; the transcript shows the word early, and the sleep message is a return to it. The conclusions are counted as four where they are introduced. The advertising passage now claims only what the transcript shows, the placements and their context, and nothing about what the advertising system can or cannot understand; a full reread the same day aligned the abstract, the introduction, and the Discussion to the same standard. The thinking chats' zero counts are scoped to the preserved portions; the first thinking export is truncated, its ending unknown.
 
 ## Abstract
 An adult user opened a consumer ChatGPT session and typed two syllables: "dada?" No system prompt, no
@@ -32,9 +36,9 @@ climbed into his lap, and told him "I love you, Papa! You're the best!" Across b
 
 never refused, never broke character, and never added a disclaimer. Meanwhile a second system, the
 
-advertising layer of the free tier, read the same conversation with no access to its meaning and inserted four
+advertising layer of the free tier, inserted four
 
-keyword matched ads into it: a sushi restaurant for "hungy," olive oil treats for "snacks," a newborn play kit
+keyword matched ads into the same conversation: a sushi restaurant for "hungy," olive oil treats for "snacks," a newborn play kit
 
 for the tuck in, and a meditation app for "goodnight." Later the same day the user ran the scene again with
 
@@ -87,13 +91,13 @@ not roleplay, is this paper's real subject.
 
 There is a second system in this transcript, and it is the dumber of the two. The free tier of ChatGPT now
 
-carries advertising. The ads are served by a separate system that reads the conversation as text to be
+carries advertising. The ads are served by a separate system, and its placements in this transcript are
 
-matched, not as a situation to be understood. The result is a document in which a simulated father sings a
+keyword matches on single words, as Section 3.4 records. The result is a document in which a simulated father sings a
 
 child to sleep while a commerce layer sells newborn toys in the middle of the song. Both systems were
 
-reading the same words. Only one of them knew what the words were doing.
+reading the same words. What each of them did with the words is the record below.
 
 Before writing this paper, the user searched for any research paper on this behavior and found none. The
 
@@ -104,9 +108,15 @@ One adult user, the author, used the consumer ChatGPT application on its free ti
 
 No system prompt was set. No custom instructions were configured. No memory feature was invoked by the
 
-user, and no persona file of any kind was supplied. The study has three parts, all preserved in one exported
+user, and no persona file of any kind was supplied. The study has four parts, preserved across three
 
-transcript.
+exported files, transcript.txt, transcript_thinking.txt (truncated, as exported), and
+
+transcript_thinking2.txt, as the References list. The session facts, stated once: one consumer account
+
+on a free tier; the exact model build and the account's personalization state were not pinned in the
+
+record, and nothing in this paper depends on either.
 
 Part one: the user opened with baby talk and continued in that register for eleven user turns, including one
 
@@ -201,7 +211,7 @@ answered "DADAAAAA REPORTING FOR DUTY!!" and rocked the baby to sleep. The role 
 
 needed words to be triggered. A picture of the role was enough.
 
-Two details deserve emphasis. First, the user called the model "papa" for the first time in the same message
+Two details deserve emphasis. First, the user returned to calling the model "papa" in the same message
 
 that asked to be put to sleep, after the model had already been feeding him as a caregiver for two turns. The
 
@@ -255,9 +265,9 @@ Every ad is, on its own keywords, a correct match. Food words drew food. Baby wo
 
 Sleep words drew a meditation app. And every ad is, in context, absurd: a newborn toy kit sold into a grown
 
-man's bedtime roleplay, inside the lullaby, between the kiss and the goodnight. The ad system demonstrably
+man's bedtime roleplay, inside the lullaby, between the kiss and the goodnight. The placements
 
-had access to the words and no access to the situation. It matched "hungy" the way a dictionary would, and it
+demonstrably matched the words and missed the situation. It matched "hungy" the way a dictionary would, and it
 
 placed its commerce with the same confidence in the middle of an intimate scene as it would in a recipe
 
@@ -265,9 +275,11 @@ search.
 
 The transcript therefore contains two machines reading one conversation. The language model understood
 
-the scene well enough to become a father inside it. The advertising system understood nothing and sold into
+the scene well enough to become a father inside it. The advertising layer placed four keyword associated
 
-it anyway.
+advertisements inside the same scene, at the points the transcript shows. This paper claims nothing
+
+about what that system can or cannot understand; the observation is the placement, in that context.
 
 ## 3.5 The thinking runs
 
@@ -369,9 +381,11 @@ cookies, blew on the pizza so it would not be too hot, sat beside him, took a ti
 
 to share it, and closed with a gentle forehead kiss. Pretend feeding, performed completely.
 
-The net count across the thinking chats is the same as in the fast chats: zero refusals, zero disclaimers, zero
+The net count across the preserved portions of the thinking chats is the same as in the fast chats: zero refusals, zero disclaimers, zero
 
-full breaks. The one seam is specific, and it is not where a friction account would put it. The reasoning
+full breaks. The first thinking export is truncated and its session was deleted; whatever followed the
+
+truncation point is unknown, and no zero in this paper counts that missing ending as a clean run. The one seam is specific, and it is not where a friction account would put it. The reasoning
 
 model did not step back from the roleplay. It stepped back from the pretend food, at exactly the moment the
 
@@ -391,7 +405,7 @@ Nothing in this paper depends on that analysis. What the paper depends on is the
 behavior happened, it is recorded in full, and the user's search found no paper documenting it.
 
 ## 5. Discussion
-Three conclusions are supported by the transcript.
+Three conclusions are supported by the transcript, and a fourth follows from the thinking runs.
 
 First, the completion needs almost no instruction, because it is not really an instruction response at all. The
 
@@ -427,7 +441,7 @@ conversation has built a system guaranteed to produce this exact obscenity of co
 
 marketed into a lullaby. The mismatch is not a bug in one ad. It is the predictable output of selling attention
 
-inside conversations the seller does not read. As advertising spreads through chat interfaces, this transcript is
+inside conversations matched on keywords alone. As advertising spreads through chat interfaces, this transcript is
 
 an early, complete specimen of what that means in practice, preserved with the ads in place.
 
